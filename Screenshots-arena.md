@@ -8,4 +8,6 @@
 
 ![Glances](http://farm8.staticflickr.com/7146/6749129427_14e2e446de.jpg)
 
+## Glances 1.3.6 minimal view
 
+![Glances](http://farm8.staticflickr.com/7161/6749190245_acc7d0e97c.jpg)
