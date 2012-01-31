@@ -1,6 +1,10 @@
 # Screenshots arena
 
-## Glances 1.3.6 in a GNU Linux Terminator
+## Glances 1.3.7 in a GNU Linux Terminal (with logs)
+
+![Glances](http://farm8.staticflickr.com/7157/6797556873_8707712ba1.jpg)
+
+## Glances 1.3.6 in a GNU Linux Terminal
 
 ![Glances](http://farm8.staticflickr.com/7008/6749129531_006b870ec1.jpg)
 
