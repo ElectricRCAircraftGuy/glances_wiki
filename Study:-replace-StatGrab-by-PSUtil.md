@@ -19,6 +19,7 @@ _Remarks_: The statgrab Glances version use the statgrab.sg_get_cpu_percents() f
 > {'kernel': 1.3106160163879395, 'iowait': 2.0969855785369873, 'user': 3.2765400409698486, 'idle': 95.412841796875, 'swap': 0.0, 'time_taken': 4, 'nice': 0.0}
 
 **=> Code needed**
+
 **DONE IN THE EXPERIMENTAL BRANCH**
 
 ## LOAD 
@@ -38,6 +39,7 @@ No function in the psutil lib...
 > 2
 
 **=> No problem**
+
 **DONE IN THE EXPERIMENTAL BRANCH**
 
 ## MEM
