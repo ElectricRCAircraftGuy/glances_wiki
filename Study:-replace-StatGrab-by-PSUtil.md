@@ -72,6 +72,8 @@ No function in the psutil lib...
 
 **=> psutil.network_io_counters(True) can replace statgrab.sg_get_network_io_stats_diff() but we loose the Interface speed information of the statgrab.sg_get_network_iface_stats() function.**
 
+**DONE IN THE EXPERIMENTAL BRANCH**
+
 ## DISK I/O
 
 >psutil.disk_io_counters(True)
@@ -79,7 +81,10 @@ No function in the psutil lib...
 > {'sda5': iostat(read_count=125087, write_count=26136, read_bytes=624762880, write_bytes=1132367872, read_time=1796496, write_time=8928408), 'sda2': iostat(read_count=2, write_count=0, read_bytes=2048, write_bytes=0, read_time=100, write_time=0), 'sda1': iostat(read_count=454185, write_count=1733060, read_bytes=8920400896L, write_bytes=41223196672L, read_time=11263840, write_time=89853300)}
 
 **=> No problem. psutil.disk_io_counters(True) can replace statgrab.sg_get_disk_io_stats_diff(). **
+
 **! More detail (per logical drive) in the PsUtil function.**
+
+**DONE IN THE EXPERIMENTAL BRANCH**
 
 ## MOUNT
 
