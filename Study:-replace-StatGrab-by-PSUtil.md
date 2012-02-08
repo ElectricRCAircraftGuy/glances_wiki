@@ -125,4 +125,7 @@ Additionnaly features:
 > p.get_memory_percent()	=> 0.3137343327216745
 
 **=> Code needed.**
+
 **Make try before the use of p.cmdline (raise AccessDenied(self.pid, self._process_name))**
+
+**DONE IN THE EXPERIMENTAL BRANCH**
