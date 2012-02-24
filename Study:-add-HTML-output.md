@@ -10,3 +10,5 @@ Usefull libs (or not...):
 Install (Ubuntu):
 
 `apt-get install python-jinja2`
+
+Template exemple: http://jinja.pocoo.org/docs/templates/
