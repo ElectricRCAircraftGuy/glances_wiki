@@ -11,4 +11,4 @@ Install (Ubuntu):
 
 `apt-get install python-jinja2`
 
-Template exemple: http://jinja.pocoo.org/docs/templates/
+Template exemple (base/slave): http://jinja.pocoo.org/docs/templates/
