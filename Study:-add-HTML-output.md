@@ -10,9 +10,7 @@ The first time Gances starts (if the folder did not exist), it create a ~/.glanc
 * default.html: the default HTML template (child of the base.html)
 * default.css: the default CSS
 
-Users can create new templates (both HTML and CSS) based on the default one.
-
-To use the new templates, users had  to use the "-w templatename" option.
+Users can create new templates (both HTML and CSS) based on the default one. To use the new templates, users had  to use the "-w templatename" option: the template.html and template.css will be loaded instead of the default one.
 
 # Usefull libs (or not...):
 
