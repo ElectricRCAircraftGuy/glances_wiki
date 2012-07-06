@@ -1,5 +1,9 @@
 # Screenshots arena
 
+## Glances 1.4 (last stable release)
+
+![Glances](https://github.com/nicolargo/glances/raw/master/screenshot.png)
+
 ## Glances 1.3.7 in a GNU Linux Terminal (with logs)
 
 ![Glances](http://farm8.staticflickr.com/7157/6797556873_8707712ba1.jpg)
