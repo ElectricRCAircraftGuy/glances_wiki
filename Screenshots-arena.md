@@ -1,8 +1,10 @@
 # Screenshots arena
 
-## Glances 1.4 (last stable release)
+## Glances 1.4.1 
 
 ![Glances](https://github.com/nicolargo/glances/raw/master/screenshot.png)
+
+![Glances](https://github.com/nicolargo/glances/raw/master/screenshot-wide.png)
 
 Also on Mac OS:
 ![Glances](http://farm8.staticflickr.com/7260/7657428486_426bd4d2cf_z.jpg)
