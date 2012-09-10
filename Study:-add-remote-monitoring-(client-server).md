@@ -21,3 +21,11 @@ The PCA build the monitoring data, encapsulate it on a JSON and send its to the 
 The PCB @ or name is displayed in the footer of the PCA Glances screen
 
 The PCA @ or name is displayed in the header of the PCB Glances screen
+
+# Todo
+
+Change the glancesStats class and add a method:
+
+   def getAll(self):
+        return < All the monitoring varaible in 1 buffer >
+
