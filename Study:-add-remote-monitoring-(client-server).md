@@ -14,7 +14,7 @@ PCA listen on a TCP socket
 
 PCB connects to the PCA with a TCP connection (@ and port)
 
-The PCA build the monitoring data, encapsulate it on a JSON and them back to the PCB
+The PCA build the monitoring data, encapsulate it on a JSON and send its to the PCB
 
 # User interface
 
