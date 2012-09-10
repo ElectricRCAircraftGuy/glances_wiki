@@ -18,15 +18,17 @@ The PCA build the monitoring data, encapsulate it on a JSON and send its to the 
 
 # User interface
 
-The PCB @ or name is displayed in the footer of the PCA Glances screen
+The PCB @ or name is displayed in the header of the PCA Glances screen
 
-The PCA @ or name is displayed in the header of the PCB Glances screen
+On the PCB UI, t is possible o switch between local (PCB) and remote (PCA) view.
+
+The PCA @ or name is displayed in the footer of the PCB Glances screen
 
 # Todo
 
-Change the glancesStats class and add a method:
+Change the glancesStats class and add a method (server):
 
     def getAll(self):
-
       return < All the monitoring varaible in 1 buffer >` 
 
+On client change the display method in the glancesScreen class to manage local / remote monitoring.
