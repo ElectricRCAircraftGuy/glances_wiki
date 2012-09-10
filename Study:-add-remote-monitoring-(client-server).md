@@ -10,7 +10,7 @@ PCB# glances -c @PCA
 
 # Network
 
-PCA listen on a TCP socket
+PCA listen on a TCP socket: http://docs.python.org/library/socketserver.html
 
 PCB connects to the PCA with a TCP connection (@ and port)
 
