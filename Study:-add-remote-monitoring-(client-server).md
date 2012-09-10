@@ -20,9 +20,11 @@ The PCA:
 
 2. [serialize it using JSON](http://docs.python.org/library/json.html)
 
-3. [compress it using the ZLIB](http://docs.python.org/library/zlib.html)
+3. (optionnal) [compress it using the ZLIB](http://docs.python.org/library/zlib.html)
 
-4. send it to the PCBusing the TCP connection
+4. (optionnal) Encrypt data using external [PyCrypto lib](http://pypi.python.org/pypi/pycrypto/2.6)
+
+5. send it to the PCBusing the TCP connection
 
 # User interface
 
