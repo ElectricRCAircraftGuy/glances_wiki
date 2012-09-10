@@ -26,7 +26,10 @@ The PCA @ or name is displayed in the header of the PCB Glances screen
 
 Change the glancesStats class and add a method:
 
-`def getAll(self):'
+`def getAll(self):`
 `  return < All the monitoring varaible in 1 buffer >` 
 
-  
+Et hop:
+
+`def getAll(self):
+  return < All the monitoring varaible in 1 buffer >` 
