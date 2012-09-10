@@ -14,7 +14,7 @@ PCA listen on a TCP socket: http://docs.python.org/library/socketserver.html
 
 PCB connects to the PCA with a TCP connection (@ and port)
 
-The PCA build the monitoring data, encapsulate it on a JSON and send its to the PCB
+The PCA build the monitoring data, serialize it using JSON and send it to the PCB
 
 # User interface
 
