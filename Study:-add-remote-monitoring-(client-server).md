@@ -28,6 +28,7 @@ Change the glancesStats class and add a method:
 
 `
 def getAll(self):
+
   return < All the monitoring varaible in 1 buffer >
 ` 
 
