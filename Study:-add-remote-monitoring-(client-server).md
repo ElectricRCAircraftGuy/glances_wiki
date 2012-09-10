@@ -16,8 +16,11 @@ PCB connects to the PCA with a TCP connection (@ and port)
 
 The PCA:
 1. build the monitoring data (with the new getAll method)
+
 2. [serialize it using JSON](http://docs.python.org/library/json.html)
+
 3. [compress it using the ZLIB](http://docs.python.org/library/zlib.html)
+
 4. send it to the PCBusing the TCP connection
 
 # User interface
