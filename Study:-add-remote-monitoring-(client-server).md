@@ -12,7 +12,7 @@ PCB# glances -c @PCA
 
 Use the Twisted API: 
 
-* http://twistedmatrix.com/trac/
+* http://twistedmatrix.com/documents/current/core/howto/tutorial/intro.html
 * http://twistedmatrix.com/documents/current/core/howto/gendefer.html
 
 PCA listen on a TCP socket
