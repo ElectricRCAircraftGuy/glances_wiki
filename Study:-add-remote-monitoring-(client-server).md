@@ -10,7 +10,12 @@ PCB# glances -c @PCA
 
 # Network
 
-PCA listen on a TCP socket: http://docs.python.org/library/socketserver.html
+Two methods:
+
+* Standard TCP socket: http://docs.python.org/library/socketserver.html
+* Use the Twisted API: http://twistedmatrix.com/trac/
+
+PCA listen on a TCP socket
 
 PCB connects to the PCA with a TCP connection (@ and port)
 
