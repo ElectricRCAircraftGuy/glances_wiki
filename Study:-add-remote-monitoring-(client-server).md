@@ -10,10 +10,10 @@ PCB# glances -c @PCA
 
 # Network
 
-Two methods:
+Use the Twisted API: 
 
-* Standard TCP socket: http://docs.python.org/library/socketserver.html / http://stackoverflow.com/questions/5308080/python-socket-accept-nonblocking
-* Use the Twisted API: http://twistedmatrix.com/trac/
+* http://twistedmatrix.com/trac/
+* http://twistedmatrix.com/documents/current/core/howto/gendefer.html
 
 PCA listen on a TCP socket
 
