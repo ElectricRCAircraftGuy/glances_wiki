@@ -12,7 +12,7 @@ PCB# glances -c @PCA
 
 Two methods:
 
-* Standard TCP socket: http://docs.python.org/library/socketserver.html
+* Standard TCP socket: http://docs.python.org/library/socketserver.html / http://stackoverflow.com/questions/5308080/python-socket-accept-nonblocking
 * Use the Twisted API: http://twistedmatrix.com/trac/
 
 PCA listen on a TCP socket
