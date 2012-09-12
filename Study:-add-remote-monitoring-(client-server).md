@@ -15,6 +15,14 @@ Use the Twisted API:
 * http://twistedmatrix.com/documents/current/core/howto/tutorial/intro.html
 * http://twistedmatrix.com/documents/current/core/howto/gendefer.html
 
+or Gevent:
+
+* http://www.gevent.org/contents.html
+* http://sdiehl.github.com/gevent-tutorial/
+* http://www.zeromq.org/
+
+or ...
+
 PCA listen on a TCP socket
 
 PCB connects to the PCA with a TCP connection (@ and port)
