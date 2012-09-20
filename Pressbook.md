@@ -1,8 +1,12 @@
 We talk about Glances...
 
+Glances first place in the GitHub Top Star October 2012:
+
+![Glances Top App GitHub](https://dl.dropbox.com/u/1112933/github-top-star.png)
+
 Glances on [the Linux Action Show (Youtube Video)](http://youtu.be/68U8HI4tXws?t=6m55s) :)
 
-![Glances on th Linux Action Show]( https://dl.dropbox.com/u/1112933/glances-LinuxActionShow.png)
+![Glances on th Linux Action Show](https://dl.dropbox.com/u/1112933/glances-LinuxActionShow.png)
 
 First page [on Hackers News !](http://news.ycombinator.com/item?id=4470590)
 
