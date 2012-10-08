@@ -1,5 +1,9 @@
 We talk about Glances...
 
+# Glances is now included in the official Debian Sid repos
+
+See [stats here](http://qa.debian.org/popcon-graph.php?packages=glances).
+
 # Glances on (Web)Tv
 
 On the [Tree House Show (Youtube Video ~ at 1m34s)](http://www.youtube.com/watch?v=7aEYoP5-duY&feature=share&list=PLFDA5B0CD72326128?t=1m34s)
