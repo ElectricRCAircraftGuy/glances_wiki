@@ -1,5 +1,10 @@
 # Screenshots arena
 
+## Glances 1.4.2
+
+Glances versus Top:
+![Glances](https://dl.dropbox.com/u/1112933/glances-vs-top.png)
+
 ## Glances 1.4.1 
 
 ![Glances](https://github.com/nicolargo/glances/raw/master/screenshot.png)
