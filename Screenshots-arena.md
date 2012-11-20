@@ -1,5 +1,9 @@
 # Screenshots arena
 
+## Glances 1.6 beta
+
+![Glances](http://www.nicolargo.com/blogdata/glances-1.6b.jpg)
+
 ## Glances 1.4.2
 
 Glances versus Top:
