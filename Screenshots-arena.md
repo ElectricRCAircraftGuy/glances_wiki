@@ -1,6 +1,6 @@
 # Screenshots arena
 
-## Glances 1.6 beta
+## Glances 1.5.2 bêta
 
 ![Glances](http://www.nicolargo.com/blogdata/glances-1.6b.jpg)
 
@@ -21,6 +21,10 @@ Also on Mac OS:
 ## Glances 1.3.7 in a GNU Linux Terminal (with logs)
 
 ![Glances](http://farm8.staticflickr.com/7157/6797556873_8707712ba1.jpg)
+
+## Glances 1.3.7 in a Android SSH Client
+
+![Glances](http://farm9.staticflickr.com/8206/8287378180_7866709320_z.jpg)
 
 ## Glances 1.3.6 in a GNU Linux Terminal
 
