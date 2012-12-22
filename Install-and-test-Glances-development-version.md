@@ -20,6 +20,8 @@ and optionnaly (if you want to test the HTML export function):
 
 ## Run the Glances HEAD version
 
+### Standalone mode
+
 `~/tmp/glances/glances/glances.py`
 
 or
@@ -27,5 +29,17 @@ or
 `~/tmp/glances/glances/glances.py -e`
 
 If you have sensors on your machine...
+
+### Client/Server mode
+
+On the server:
+
+`~/tmp/glances/glances/glances.py -s`
+
+On the client:
+
+`~/tmp/glances/glances/glances.py -c @IPServer`
+
+Where @IPServer is the IP address or hostname where the Glances server is running.
 
 Enjoy...
