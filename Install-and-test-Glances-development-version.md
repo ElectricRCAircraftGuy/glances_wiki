@@ -1,4 +1,4 @@
-If you want to install and test the latest [HEAD](https://github.com/nicolargo/glances) versionwithout deleting your stable version, follows this procedure:
+If you want to install and test the latest [HEAD](https://github.com/nicolargo/glances) version without deleting/uninstall your stable version, follows this procedure:
 
 ## Install latest libraries
 
