@@ -22,4 +22,10 @@ and optionnaly (if you want to test the HTML export function):
 
 `~/tmp/glances/glances/glances.py`
 
+or
+
+`~/tmp/glances/glances/glances.py -e`
+
+If you have sensors on your machine...
+
 Enjoy...
