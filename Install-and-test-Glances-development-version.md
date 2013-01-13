@@ -42,4 +42,10 @@ On the client:
 
 Where @IPServer is the IP address or hostname where the Glances server is running.
 
+## Upgrade the latest HEAD version
+
+`cd ~/tmp/glances`
+
+`git pull master`
+
 Enjoy...
