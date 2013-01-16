@@ -50,7 +50,7 @@ You need a GitHub account (it's free...) to log bug on the Glances' tracker.
 
 * Glances and PsUtil version (can be retreived with the _~/tmp/glances/glances/glances.py -v_ command)
 * System configuration: Operating system name and version (output of _uname -a_ on GNU/Linux)
-* Output of the unitary test (_~/tmp/glances/glances/unitest.py_)
+* Output of the unitary test (output of _~/tmp/glances/glances/unitest.py_)
 * Problem description (in English) and optionnaly error message displayed by Glances
 
 Thks !
