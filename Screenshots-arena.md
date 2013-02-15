@@ -1,5 +1,9 @@
 # Screenshots arena
 
+## Glances 1.6 on a Raspberry PI 512
+
+![Glances](https://dl.dropbox.com/u/1112933/glances-1.6-raspberrypi.png)
+
 ## Glances 1.5.2 bêta
 
 ![Glances](http://www.nicolargo.com/blogdata/glances-1.6b.jpg)
