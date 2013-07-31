@@ -91,3 +91,18 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 `s.getSystem()`
 
 {"linux_distro": "Ubuntu 12.10", "platform": "64bit", "os_name": "Linux", "hostname": "lifebook", "os_version": "3.5.0-21-generic"}
+
+**New in version 1.7**
+
+`s.getNetTimeSinceLastUpdate()`
+
+8.391342163085938
+
+`s.getDiskTimeSinceLastUpdate()`
+
+2.478149890899658
+
+`s.getProcessDiskTimeSinceLastUpdate()`
+
+8.696136951446533
+
