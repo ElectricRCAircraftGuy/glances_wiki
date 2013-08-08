@@ -44,6 +44,8 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 
 [{"regex": ".*stress.*", "countmin": "1", "command": "stress --version", "description": "Stress programs", "countmax": "8"}, {"regex": ".*python.*", "countmin": null, "command": null, "description": "Python programs", "countmax": null}, {"regex": ".*xeyes.*", "countmin": null, "command": null, "description": "Famous Xeyes", "countmax": null}]
 
+_Note: new in Glances 1.7_
+
 `s.getCore()`
 
 4
