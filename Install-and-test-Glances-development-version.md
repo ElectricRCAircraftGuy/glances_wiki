@@ -25,6 +25,10 @@ or if you have sensors (lm-sensors) on your machine:
 
     ~/tmp/glances/glances/glances.py -e
 
+To test the monitored processes list:
+
+    ~/tmp/glances/glances/glances.py -C ~/tmp/glances/glances/glances-with-monitored.conf
+
 ### Client/Server mode
 
 On the server:
