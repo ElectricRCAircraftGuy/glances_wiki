@@ -40,6 +40,10 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 
 {"STD": [50, 70, 90], "CPU_IOWAIT": [40, 60, 80], "FS": [50, 70, 90], "LOAD": [0.7, 1.0, 5.0], "CPU_SYSTEM": [50, 70, 90], "PROCESS_MEM": [50, 70, 90], "TEMP": [60, 70, 80], "MEM": [50, 70, 90], "CPU_USER": [50, 70, 90], "PROCESS_CPU": [50, 70, 90], "SWAP": [50, 70, 90]}
 
+`s.getAllMonitored()`
+
+[{"regex": ".*stress.*", "countmin": "1", "command": "stress --version", "description": "Stress programs", "countmax": "8"}, {"regex": ".*python.*", "countmin": null, "command": null, "description": "Python programs", "countmax": null}, {"regex": ".*xeyes.*", "countmin": null, "command": null, "description": "Famous Xeyes", "countmax": null}]
+
 `s.getCore()`
 
 4
@@ -105,4 +109,3 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 `s.getProcessDiskTimeSinceLastUpdate()`
 
 8.696136951446533
-
