@@ -1,5 +1,9 @@
 # Screenshots arena
 
+## Glances 1.7
+
+![Glances](https://dl.dropboxusercontent.com/s/5x9sbxsvh5h1ggs/glances-1.7.png)
+
 ## Glances 1.6 on a Raspberry PI 512
 
 ![Glances](https://dl.dropbox.com/u/1112933/glances-1.6-raspberrypi.png)
@@ -12,15 +16,6 @@
 
 Glances versus Top:
 ![Glances](https://dl.dropbox.com/u/1112933/glances-vs-top.png)
-
-## Glances 1.4.1 
-
-![Glances](https://github.com/nicolargo/glances/raw/master/screenshot.png)
-
-![Glances](https://github.com/nicolargo/glances/raw/master/screenshot-wide.png)
-
-Also on Mac OS:
-![Glances](http://farm8.staticflickr.com/7260/7657428486_426bd4d2cf_z.jpg)
 
 ## Glances 1.3.7 in a GNU Linux Terminal (with logs)
 
