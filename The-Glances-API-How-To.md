@@ -12,6 +12,8 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 
 `s.system.listMethods()`
 
+> Get all the methods of the API
+
 ['getAll',
  'getAllLimits',
  'getCore',
