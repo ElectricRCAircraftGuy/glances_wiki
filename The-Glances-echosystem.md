@@ -1,2 +1,1 @@
-![The Glances echosystem](https://www.dropbox.com/s/p03wx11cs1lst6p/glances-echosystem.png)
-![Bis](https://www.dropbox.com/s/p03wx11cs1lst6p/glances-echosystem.png)
+![The Glances echosystem](https://dl.dropboxusercontent.com/s/p03wx11cs1lst6p/glances-echosystem.png?token_hash=AAEtflQdMWU2jbBuKT9m488xLKKF0b_MRoc0Xu-PDntI5A&dl=1)
