@@ -12,6 +12,6 @@ On a Windows operating system (Windows 7 or higher)
 
 3. Install the current Glances version (from command line):  **pip install Glances**
 
-4. Download the future Glances version into the C:\ folder: **https://raw.github.com/fraoustin/glances/patch-1/glances/glances.py**
+4. Download the future Glances version into the C:\ folder: **https://raw.github.com/fraoustin/glances/master/glances/glances.py**
 
 5. Test Glances (from command line): **c:\Python27\python.exe c:\glances.py**
