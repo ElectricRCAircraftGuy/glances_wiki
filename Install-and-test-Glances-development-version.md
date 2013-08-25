@@ -5,7 +5,11 @@ If you want to install and test the latest [HEAD](https://github.com/nicolargo/g
     pip install psutil
     pip install pysensors
 
-and optionnaly (if you want to test the HTML export function):
+Additionaly and only on Windows operating system:
+
+    pip install colorconsole
+
+Optionnaly (if you want to test the HTML export function):
 
     pip install jinja2
 
