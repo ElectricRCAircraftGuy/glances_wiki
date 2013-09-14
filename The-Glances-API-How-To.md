@@ -16,16 +16,22 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 
 ['getAll',
  'getAllLimits',
+ 'getAllMonitored',
+ 'getBatPercent',
  'getCore',
  'getCpu',
  'getDiskIO',
+ 'getDiskTimeSinceLastUpdate',
  'getFs',
+ 'getHDDTemp',
  'getLoad',
  'getMem',
  'getMemSwap',
+ 'getNetTimeSinceLastUpdate',
  'getNetwork',
  'getNow',
  'getProcessCount',
+ 'getProcessDiskTimeSinceLastUpdate',
  'getProcessList',
  'getSensors',
  'getSystem',
@@ -38,13 +44,13 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 
 > Get all the stats in a single dict
 
-{"load": {"min1": 0.3, "min5": 0.7, "min15": 1.03}, "process": [{"username": "root", "status": "S", "cpu_times": [1.93, 1.26], "name": "init", "memory_percent": 0.057985619150037006, "cpu_percent": 0.0, "pid": 1, "io_counters": [0, 0, 0, 0, 0], "cmdline": "/sbin/init", "memory_info": [2281472, 25194496], "nice": 0}, {"username": "root", "status": "S", "cpu_times": [0.0, 0.14], "name": "kthreadd", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 2, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "nice": 0}, {"username": "root", "status": "S", "cpu_times": [0.0, 36.07], "name": "ksoftirqd/0", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 3, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "nice": 0}, {"username": "root", "status": "S", "cpu_times": [0.0, 1.58], "name": "migration/0", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 6, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "nice": 0}, {"username": "root", "status": "S",...
+{"load": {"min1": 0.4, "min5": 0.28, "min15": 0.34}, "process": [{"username": "root", "status": "S", "cpu_times": [0.48, 0.85], "name": "init", "memory_percent": 0.06746296564281899, "cpu_percent": 0.0, "pid": 1, "io_counters": [0, 0, 0, 0, 0], "cmdline": "/sbin/init", "memory_info": [2654208, 27807744], "time_since_update": 149.09124898910522, "nice": 0}, {"username": "root", "status": "S", "cpu_times": [0.0, 0.01], "name": "kthreadd", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 2, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "time_since_update": 149.09124898910522, "nice": 0}, {"username": "root", "status": "S", "cpu_times": [0.08, 2.3], "name": "ksoftirqd/0", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 3, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "time_since_update": 149.09124898910522, "nice": 0}, {"username": "root", "status": "S", "cpu_times": [0.0, 0.0], "name": "kworker/0:0H", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 5, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "time_since_update": 149.09124898910522, "nice": -20}, {"username": "root", "status": "S", "cpu_times": [0.0, 0.0], "name": "kworker/u:0H", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 7, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "time_since_update": 149.09124898910522, "nice": -20}, {"username": "root", "status": "S", "cpu_times": [0.05, 0.13], "name": "migration/0", "memory_percent": 0.0, "cpu_percent": 0.0, "pid": 8, "io_counters": [0, 0, 0, 0, 0], "cmdline": "", "memory_info": [0, 0], "time_since_update": 149.09124898910522, "nice": 0},...
 
 `s.getAllLimits()`
 
 > Get all the server's limits in a dict
 
-{"STD": [50, 70, 90], "CPU_IOWAIT": [40, 60, 80], "FS": [50, 70, 90], "LOAD": [0.7, 1.0, 5.0], "CPU_SYSTEM": [50, 70, 90], "PROCESS_MEM": [50, 70, 90], "TEMP": [60, 70, 80], "MEM": [50, 70, 90], "CPU_USER": [50, 70, 90], "PROCESS_CPU": [50, 70, 90], "SWAP": [50, 70, 90]}
+{"STD": [50, 70, 90], "CPU_IOWAIT": [40.0, 60.0, 80.0], "FS": [50.0, 70.0, 90.0], "LOAD": [0.7, 1.0, 5.0], "CPU_SYSTEM": [50.0, 70.0, 90.0], "PROCESS_MEM": [50.0, 70.0, 90.0], "TEMP": [60.0, 70.0, 80.0], "MEM": [50.0, 70.0, 90.0], "CPU_USER": [50.0, 70.0, 90.0], "PROCESS_CPU": [50.0, 70.0, 90.0], "SWAP": [50.0, 70.0, 90.0], "HDDTEMP": [45, 52, 60]}
 
 `s.getAllMonitored()`
 
@@ -70,13 +76,15 @@ _Note: new in Glances 1.7_
 
 > Return the disk IO stats in a list of dict
 
-[{"read_bytes": 8192, "write_bytes": 2703360, "disk_name": "sda1"}, {"read_bytes": 0, "write_bytes": 0, "disk_name": "sda2"}, {"read_bytes": 4096, "write_bytes": 0, "disk_name": "sda5"}, {"read_bytes": 0, "write_bytes": 0, "disk_name": "sr0"}]
+[{"time_since_update": 9.43163800239563, "read_bytes": 0, "write_bytes": 495616, "disk_name": "sda1"}, {"time_since_update": 9.43163800239563, "read_bytes": 0, "write_bytes": 0, "disk_name": "sda2"}, {"time_since_update": 9.43163800239563, "read_bytes": 0, "write_bytes": 0, "disk_name": "sda5"}, {"time_since_update": 9.43163800239563, "read_bytes": 0, "write_bytes": 0, "disk_name": "sr0"}]
+
+_Note: The "time_since_update" is new in Glances 1.7_
 
 `s.getFs()`
 
 > Return the file systemstats in a list of dict
 
-[{"mnt_point": "/", "used": 102535917568, "device_name": "/dev/sda1", "avail": 192695640064, "fs_type": "ext4", "size": 311031078912}, {"mnt_point": "/run", "used": 995328, "device_name": "tmpfs", "avail": 785915904, "fs_type": "tmpfs", "size": 786911232}]
+[{"mnt_point": "/", "used": 194091466752, "device_name": "/dev/sda1", "avail": 101005873152, "fs_type": "ext4", "size": 310896861184}, {"mnt_point": "/run", "used": 2736128, "device_name": "tmpfs", "avail": 390696960, "fs_type": "tmpfs", "size": 393433088}, {"mnt_point": "/run/rpc_pipefs", "used": 0, "device_name": "rpc_pipefs", "avail": 0, "fs_type": "rpc_pipefs", "size": 0}]
 
 `s.getLoad()`
 
@@ -100,7 +108,9 @@ _Note: new in Glances 1.7_
 
 > Return the network stats in a list of dict (one item per interface)
 
-[{"interface_name": "eth0", "rx": 0, "tx": 0}, {"interface_name": "lo", "rx": 3829, "tx": 3829}, {"interface_name": "virbr0", "rx": 0, "tx": 0}, {"interface_name": "wlan0", "rx": 32186, "tx": 29183}]
+[{"tx": 0, "cumulative_rx": 0, "rx": 0, "cumulative_cx": 0, "time_since_update": 8.817749977111816, "cx": 0, "cumulative_tx": 0, "interface_name": "eth0"}, {"tx": 1179, "cumulative_rx": 1319883, "rx": 1179, "cumulative_cx": 2639766, "time_since_update": 8.817749977111816, "cx": 2358, "cumulative_tx": 1319883, "interface_name": "lo"}, {"tx": 0, "cumulative_rx": 0, "rx": 0, "cumulative_cx": 0, "time_since_update": 8.817749977111816, "cx": 0, "cumulative_tx": 0, "interface_name": "virbr0"}, {"tx": 8420, "cumulative_rx": 219855024, "rx": 7826, "cumulative_cx": 262892076, "time_since_update": 8.817749977111816, "cx": 16246, "cumulative_tx": 43037052, "interface_name": "wlan0"}]
+
+_Note: The "time_since_update" is new in Glances 1.7_
 
 `s.getNow()`
 
@@ -118,7 +128,9 @@ _Note: new in Glances 1.7_
 
 > Return the (huge) processes stats in a list of dict (one dict per processes)
 
-[{"username": "nicolargo", "status": "S", "cpu_times": [9563.32, 1604.89], "name": "chromium-browser", "memory_percent": 7.668155692948969, "cpu_percent": 1.8, "pid": 7063, "io_counters": [2825959424, 12815888384, 2825959424, 12815646720, 1], "cmdline": "chromium-browser", "memory_info": [301707264, 1122258944], "nice": 0}, {"username": "nicolargo", "status": "S", "cpu_times": [310.4, 13.31], "name": "chromium-browse", "memory_percent": 6.856981645521522, "cpu_percent": 0.2, "pid": 23242, "io_counters": [0, 0, 0, 0, 0], "cmdline": "/usr/lib/chromium-browser/chro", "memory_info": [269791232, 1139535872], "nice": 0}, {"username": "nicolargo", "status": "S", "cpu_times": [432.06, 60.84]...
+[{"username": "nicolargo", "status": "S", "cpu_times": [38.16, 3.39], "name": "chromium-browse", "memory_percent": 3.9931204432566703, "cpu_percent": 7.9, "pid": 3143, "io_counters": [0, 0, 0, 0, 0], "cmdline": "/usr/lib/chromium-browser/chro", "memory_info": [157102080, 1009815552], "time_since_update": 71.5725610256195, "nice": 0}, {"username": "nicolargo", "status": "S", "cpu_times": [668.46, 88.24], "name": "gnome-shell", "memory_percent": 2.8951814993227676, "cpu_percent": 3.6, "pid": 5357, "io_counters": [237121536, 256499712, 237121536, 256499712, 1], "cmdline": "/usr/bin/gnome-shell", "memory_info": [113905664, 1924882432], "time_since_update": 71.5725610256195, "nice": 0}, {"username": "root", "status": "S", "cpu_times": [242.2, 274.7], "name": "Xorg", "memory_percent": 1.2442128123415583, "cpu_percent": 2.1, "pid": 1628, "io_counters": [0, 0, 0, 0, 0], "cmdline": "/usr/bin/X :0 -core -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch -background none", "memory_info": [48951296, 296230912], "time_since_update": 71.5725610256195, "nice": 0}, ...
+
+_Note: The "time_since_update" is new in Glances 1.7_
 
 `s.getSensors()`
 
@@ -138,7 +150,7 @@ _Note: new in Glances 1.7_
 
 8.391342163085938
 
-_Note: new in Glances 1.7_
+_Note: Will be depredicated in Glances 1.8 and higher, please use the time_since_update field in object data dictionaries_
 
 `s.getDiskTimeSinceLastUpdate()`
 
@@ -146,7 +158,7 @@ _Note: new in Glances 1.7_
 
 2.478149890899658
 
-_Note: new in Glances 1.7_
+_Note: Will be depredicated in Glances 1.8 and higher, please use the time_since_update field in object data dictionaries_
 
 `s.getProcessDiskTimeSinceLastUpdate()`
 
@@ -154,4 +166,4 @@ _Note: new in Glances 1.7_
 
 8.696136951446533
 
-_Note: new in Glances 1.7_
+_Note: Will be depredicated in Glances 1.8 and higher, please use the time_since_update field in object data dictionaries_
