@@ -64,7 +64,7 @@ _Note: new in Glances 1.7_
 
 > Get a list of charge remaining percentages for each battery (could be more than one!)
 
-<EXAMPLE HERE>
+----------------------- EXAMPLE HERE
 
 _Note: new in Glances 1.7_
 
