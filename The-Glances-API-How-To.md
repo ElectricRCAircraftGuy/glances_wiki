@@ -60,6 +60,14 @@ And play with the Python xmlrpclib (or what ever langage...), let's start:
 
 _Note: new in Glances 1.7_
 
+`s.getBatPercent()`
+
+> Get a list of charge remaining percentages for each battery (could be more than one!)
+
+<EXAMPLE HERE>
+
+_Note: new in Glances 1.7_
+
 `s.getCore()`
 
 > Return the number of CPU core
