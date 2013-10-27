@@ -17,21 +17,24 @@ Optionnaly (if you want to test the HTML export function):
 
     mkdir ~/tmp
     cd ~/tmp
-    git clone https://github.com/nicolargo/glances.git
+    wget https://github.com/nicolargo/glances/archive/master.zip
+    unzip master.zip
+
+Note: The zipped archive for the latest version [is available here](https://github.com/nicolargo/glances/archive/master.zip).
 
 ## Run the Glances HEAD version
 
 ### Standalone mode
 
-    ~/tmp/glances/glances/glances.py
+    ~/tmp/glances-master/glances/glances.py
 
 or if you have sensors (lm-sensors) on your machine:
 
-    ~/tmp/glances/glances/glances.py -e
+    ~/tmp/glances-master/glances/glances.py -e
 
 To test the monitored processes list:
 
-    ~/tmp/glances/glances/glances.py -C ~/tmp/glances/glances/glances-with-monitored.conf
+    ~/tmp/glances-master/glances/glances.py -C ~/tmp/glances-master/glances/glances-with-monitored.conf
 
 ### Client/Server mode
 
