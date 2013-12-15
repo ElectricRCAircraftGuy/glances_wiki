@@ -1,5 +1,9 @@
 # Screenshots arena
 
+## Glances 1.7.3
+
+![Glances](https://dl.dropboxusercontent.com/s/d12b08m3x1a6tx6/glances-1.7.3.png)
+
 ## Glances 1.7
 
 ![Glances](https://dl.dropboxusercontent.com/s/5x9sbxsvh5h1ggs/glances-1.7.png)
