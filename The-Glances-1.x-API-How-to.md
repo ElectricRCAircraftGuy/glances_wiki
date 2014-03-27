@@ -1,3 +1,6 @@
+
+**Only for Glances v1.x !**
+
 A quick and dirty documentation for the Glances API based on XML/RPC with a 1 second cache system.
 
 Run a Glances server:
