@@ -51,7 +51,7 @@ You need a GitHub account (it's free...) to log bug on the Glances' tracker.
 
 [Click on this link](https://github.com/nicolargo/glances/issues/new) and enter the following informations:
 
-* Glances and PsUtil version (can be retreived with the _~/tmp/glances-master/glances/glances.py -v_ command)
+* Glances and PsUtil version (can be retreived with the _~/glances-venv/bin/python -m glances -v_ command)
 * System configuration: Operating system name and version (output of _uname -a_ and -python -V_ on GNU/Linux)
 * Problem description (in English) and optionnaly error message displayed by Glances
 
