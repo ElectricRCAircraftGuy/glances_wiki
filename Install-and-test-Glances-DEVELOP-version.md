@@ -19,7 +19,7 @@ Additionaly and only on Windows operating system:
     cd ~/tmp
     git clone -b develop git@github.com:nicolargo/glances.git
 
-## Run the Glances [DEVELOP](https://github.com/nicolargo/glances/tree/develop) version
+## Run the Glances DEVELOP version
 
 ### Standalone mode
 
