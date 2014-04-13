@@ -19,7 +19,7 @@ Additionaly and only on Windows operating system:
     cd ~/tmp
     git clone -b develop git@github.com:nicolargo/glances.git
 
-## Run the Glances HEAD version
+## Run the Glances [DEVELOP](https://github.com/nicolargo/glances/tree/develop) version
 
 ### Standalone mode
 
@@ -44,6 +44,15 @@ And the client:
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -c @IPSERVER
 
 Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
+
+### Webserver mode
+
+Run the server:
+
+    cd ~/tmp/glances
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -w
+
+And the client in your favorite Web browser: http://localhost:61208
 
 ## How to report a bug ?
 
