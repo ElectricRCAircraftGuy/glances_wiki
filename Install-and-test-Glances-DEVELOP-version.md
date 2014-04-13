@@ -23,10 +23,12 @@ Additionaly and only on Windows operating system:
 
 ### Standalone mode
 
+Run the CLI with the default configuration file using:
+
     cd ~/tmp/glances
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances.conf
 
-To test the monitored processes list:
+To test the monitored processes list configuration file:
 
     cd ~/tmp/glances
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf
@@ -52,7 +54,9 @@ Run the server:
     cd ~/tmp/glances
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -w
 
-And the client in your favorite Web browser: http://localhost:61208
+And the client in your favorite Web browser: http://@IPSERVER:61208
+
+Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
 
 ## How to report a bug ?
 
