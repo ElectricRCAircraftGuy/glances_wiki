@@ -15,6 +15,7 @@ Alls news features should be made on the _DEVELOP_ branch.
 Create the feature branch:
 
 `git flow feature start NEWFEATURE`
+
 `git flow feature publish NEWFEATURE` 
 
 Note: replace NEWFEATURE by your feature name
@@ -26,6 +27,7 @@ It's time to code...
 Commit your branch:
 
 `git commit -a -m "Description"`
+
 `git push origin feature/NEWFEATURE`
 
 Your code will be review by the Glances team. Use the [pull request function](https://help.github.com/articles/using-pull-requests) in GitHub to propose your new feature.
@@ -37,6 +39,7 @@ Your code will be review by the Glances team. Use the [pull request function](ht
 Create the feature branch:
 
 `git flow hotfix start NEWFIX`
+
 `git flow hotfix publish NEWFIX` 
 
 Note: replace NEWFIX by your own fix name
@@ -48,6 +51,7 @@ It's time to code...
 Commit your branch:
 
 `git commit -a -m "Description"`
+
 `git push origin hotfix/NEWFIX`
 
 Your code will be review by the Glances team. Use the [pull request function](https://help.github.com/articles/using-pull-requests) in GitHub to propose your fix.
