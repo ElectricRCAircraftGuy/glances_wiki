@@ -9,6 +9,8 @@ If you want to install and test the [DEVELOP](https://github.com/nicolargo/glanc
 
     ~/glances-venv/bin/pip install psutil
 
+Note you need to install _python-dev_ on you system before installing PSUtil (ex: apt-get install python-dev)
+
 Additionaly and only on Windows operating system:
 
     ~/glances-venv/bin/pip install colorconsole
