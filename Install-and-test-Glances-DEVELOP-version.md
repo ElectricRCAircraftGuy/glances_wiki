@@ -7,15 +7,20 @@ If you want to install and test the [DEVELOP](https://github.com/nicolargo/glanc
 
 ## Install latest libraries
 
+Note: you need to install _python-dev_ on you system before installing PSUtil (ex: apt-get install python-dev)
+
+Install the following libs:
+
     ~/glances-venv/bin/pip install psutil
+    ~/glances-venv/bin/pip install bottle
+    ~/glances-venv/bin/pip install batinfo
+    ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
 
-Note you need to install _python-dev_ on you system before installing PSUtil (ex: apt-get install python-dev)
-
-Additionaly and only on Windows operating system:
+Additionaly and **only on Windows** operating system:
 
     ~/glances-venv/bin/pip install colorconsole
 
-## Download Glances
+## Download Glances (develop branch)
 
     mkdir ~/tmp
     cd ~/tmp
@@ -48,6 +53,8 @@ And the client:
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -c @IPSERVER
 
 Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
+
+Note: if the Glances server is not running, Glances client try to fallback to SNMP server (early experimental function).
 
 ### Webserver mode
 
