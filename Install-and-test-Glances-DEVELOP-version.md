@@ -9,7 +9,7 @@ If you want to install and test the [DEVELOP](https://github.com/nicolargo/glanc
 
 Note: you need to install _python-dev_ on you system before installing PSUtil (ex: apt-get install python-dev)
 
-Note: if you have sensors, you should install LM-Sensors before installing P3Sensors (ex: apt-get install lm-sensors)
+Note 2: if you have sensors, you should install LM-Sensors before installing P3Sensors (ex: apt-get install lm-sensors)
 
 Install the following libs:
 
