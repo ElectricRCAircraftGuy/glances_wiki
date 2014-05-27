@@ -24,9 +24,9 @@ Additionaly and **only on Windows** operating system:
 
     mkdir ~/tmp
     cd ~/tmp
-    git clone -b develop 
+    git clone -b develop https://github.com/nicolargo/glances.git
 
-## Run the Glances DEVELOP version https://github.com/nicolargo/glances.git
+## Run the Glances DEVELOP version
 
 ### Standalone mode
 
