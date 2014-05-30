@@ -1,8 +1,9 @@
 Serveur side
 ============
 
-$ glances-develop-server
-Glances server is running on 0.0.0.0:61209
+    $ glances-develop-server
+
+    Glances server is running on 0.0.0.0:61209
 
 Client side
 ===========
