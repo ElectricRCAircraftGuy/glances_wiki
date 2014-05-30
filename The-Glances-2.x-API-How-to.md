@@ -1,4 +1,6 @@
-Glances API is based on a XMLRPC server.
+**Only for Glances v2.x !**
+
+Glances API is based on a **XMLRPC server**.
 
 Serveur side
 ============
@@ -9,6 +11,8 @@ Serveur side
 
 Client side
 ===========
+
+Implementation exemple using the Python xmlrpclib with a GNU/Linux server.
 
 Connect to the XMLRPC server:
 
