@@ -14,11 +14,14 @@ Note 2: if you have sensors, you should install LM-Sensors before installing P3S
 Install the following libs:
 
     ~/glances-venv/bin/pip install psutil
+
+and optionnaly:
+
     ~/glances-venv/bin/pip install bottle
     ~/glances-venv/bin/pip install batinfo
     ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
 
-Additionaly and **only on Windows** operating system:
+**Only on Windows** operating system:
 
     ~/glances-venv/bin/pip install colorconsole
 
