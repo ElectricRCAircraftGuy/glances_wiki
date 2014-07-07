@@ -150,3 +150,24 @@ Example: _/api/v2/all_
 ```
 
 ***
+
+GET _**/api/2/:plugin/limits**_
+
+Return the limits for the specific ``plugin``
+
+Request parameters: 
+
+* plugin: plugin name
+
+Request response:
+
+* 200 - application/json: dictionnary
+* 404 - Returned if the property does not exist
+
+Example: _/api/v2/mem/limits_
+
+```
+{"mem_careful": 50.0, "mem_critical": 90.0, "mem_warning": 70.0}
+```
+
+***
