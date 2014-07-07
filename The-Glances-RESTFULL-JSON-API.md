@@ -18,7 +18,7 @@ The RESTful API is located at:
 
 ***
 
-GET http://{glances server IP@}:61208_**/api/2/pluginslist**_
+GET _**/api/2/pluginslist**_
 
 Return the plugins available on the Glances server.
 
@@ -39,7 +39,7 @@ Example: _/api/v2/pluginslist_
 
 ***
 
-_**/api/2/:plugin**_
+GET _**/api/2/:plugin**_
 
 Return the stats for the specific ``plugin``
 
@@ -60,7 +60,7 @@ Example: _/api/v2/mem_
 
 ***
 
-_**/api/2/:plugin/:item**_
+GET _**/api/2/:plugin/:item**_
 
 Return the ``item`` stat for the specific ``plugin``
 
@@ -98,7 +98,7 @@ Return network interfaces name list
 
 ***
 
-_**/api/2/:plugin/:item/:value**_
+GET _**/api/2/:plugin/:item/:value**_
 
 Return the ``item``==``value`` stat for the specific ``plugin``
 
@@ -130,7 +130,7 @@ Return eth0 network interface stats
 
 ***
 
-_**/api/2/all**_
+GET _**/api/2/all**_
 
 Return all availables stats
 
