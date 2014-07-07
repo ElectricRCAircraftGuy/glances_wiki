@@ -63,7 +63,7 @@ Return the ``item`` stat for the specific ``plugin``
 Request parameters: 
 
 * plugin: plugin name
-* item: item to retreive
+* item: item to retrieve
 
 Request response:
 
@@ -88,7 +88,40 @@ Example: _/api/v2/network/interface_name
 
 Return network interfaces name list
 
+```
 {"interface_name": ["lo", "docker0", "eth0"]}
+```
+
+***
+
+_**/api/2/:plugin/:item/:value**_
+
+Return the ``item``==``value`` stat for the specific ``plugin``
+
+Request parameters: 
+
+* plugin: plugin name
+* item: item to retrieve
+* value: filter on item value 
+
+Request response:
+
+* 200 - application/json: dictionnary
+* 404 - Returned if the property does not exist
+
+Example: _/api/v2/processlist/pid/770
+
+Return process stats for pid 770
+```
+{"770": [{"username": "messagebus", "status": "S", "cpu_times": [0.17, 0.04], "name": "dbus-daemon", "memory_percent": 0.031136757261677143, "cpu_percent": 0.0, "pid": 770, "io_counters": [0, 0, 0, 0, 0], "cmdline": "dbus-daemon --system --fork", "memory_info": [2592768, 41635840], "time_since_update": 59.427401065826416, "nice": 0}]}
+```
+
+Example: _/api/v2/network/interface_name/eth0
+
+Return eth0 network interface stats
+
+```
+{"eth0": [{"tx": 233589, "cumulative_rx": 225276411, "rx": 510828, "cumulative_cx": 251558670, "time_since_update": 287.83594512939453, "cx": 744417, "cumulative_tx": 26282259, "interface_name": "eth0"}]}
 ```
 
 ***
