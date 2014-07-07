@@ -12,6 +12,8 @@ Serveur side
 Client side
 ===========
 
+***
+
 _**/api/2/pluginslist**_
 
 Return the plugins available on the Glances server.
