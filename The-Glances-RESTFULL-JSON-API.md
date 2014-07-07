@@ -18,7 +18,7 @@ The RESTful API is located at:
 
 ***
 
-_**/api/2/pluginslist**_
+GET http://{glances server IP@}:61208_**/api/2/pluginslist**_
 
 Return the plugins available on the Glances server.
 
