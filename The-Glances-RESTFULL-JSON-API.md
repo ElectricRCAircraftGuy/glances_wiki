@@ -1,6 +1,6 @@
 **Only for Glances v2.1 or higher !**
 
-Glances HTTP API is based on **RESTFULL/JSON**.
+Glances HTTP API is based on **RESTFul/JSON**.
 
 Serveur side
 ============
@@ -11,6 +11,10 @@ Serveur side
 
 Client side
 ===========
+
+The RESTful API is located at:
+
+`http://{glances server IP@}:61208/api/2`
 
 ***
 
