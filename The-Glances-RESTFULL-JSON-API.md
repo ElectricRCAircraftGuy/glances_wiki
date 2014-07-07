@@ -12,4 +12,17 @@ Serveur side
 Client side
 ===========
 
-Todo
+_**/api/2/pluginslist**_
+
+Return the plugins available on the Glances server.
+
+Request parameters: 
+
+None
+
+Request response:
+
+* 200 - application/json: list
+* 404 - Returned if the property does not exist
+
+
