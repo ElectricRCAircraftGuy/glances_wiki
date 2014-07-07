@@ -125,3 +125,24 @@ Return eth0 network interface stats
 ```
 
 ***
+
+_**/api/2/all**_
+
+Return all availables stats
+
+Request parameters: 
+
+* None
+
+Request response:
+
+* 200 - application/json: dictionnary
+* 404 - Returned if the property does not exist
+
+Example: _/api/v2/all_
+
+```
+{"load": {"cpucore": 4, "min1": 0.18, "min5": 0.29, "min15": 0.36}, "core": {"phys": 1, "log": 4}, "uptime": "7:10:12", "fs": [{"mnt_point": "/", "used": 164121161728, "percent": 76.3, "device_name": "/dev/sda5", "fs_type": "ext4", "size": 215225925632}],...}
+```
+
+***
