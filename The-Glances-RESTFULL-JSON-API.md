@@ -20,7 +20,7 @@ Return the plugins available on the Glances server.
 
 Request parameters: 
 
-None
+* None
 
 Request response:
 
@@ -29,8 +29,30 @@ Request response:
 
 Example:
 
+_/api/v2/pluginslist_
 ```
 ["load", "core", "uptime", "fs", "memswap", "monitor", "percpu", "mem", "sensors", "system", "alert", "psutilversion", "processlist", "diskio", "hddtemp", "processcount", "batpercent", "now", "cpu", "network", "help"]
+```
+***
+
+_**/api/2/:plugin**_
+
+Return the stats for the specific ``plugin``
+
+Request parameters: 
+
+* plugin: plugin name
+
+Request response:
+
+* 200 - application/json: dictionnary
+* 404 - Returned if the property does not exist
+
+Example:
+
+_/api/v2/mem_
+```
+{"available": 5071183872, "used": 3255848960, "cached": 1827352576, "percent": 39.1, "free": 5071183872, "inactive": 1388982272, "active": 3679604736, "total": 8327032832, "buffers": 477982720}
 ```
 
 
