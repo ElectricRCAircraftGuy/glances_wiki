@@ -77,14 +77,14 @@ Return the memory used (RAM)
 {"used": 3255848960}
 ```
 
-Example: _/api/v2/processlist/pid
+Example: _/api/v2/processlist/pid_
 
 Return processes' pid list
 ```
 {"pid": [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 76, 77, 78, 90, 92, 93, 113, 114, 165, 167, 168, 169, 170, 171, 172, 191, 192, 370, 376, 429, 430, 454, 468, 522, 562, 770, 773]}
 ```
 
-Example: _/api/v2/network/interface_name
+Example: _/api/v2/network/interface_name_
 
 Return network interfaces name list
 
@@ -109,14 +109,14 @@ Request response:
 * 200 - application/json: dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/processlist/pid/770
+Example: _/api/v2/processlist/pid/770_
 
 Return process stats for pid 770
 ```
 {"770": [{"username": "messagebus", "status": "S", "cpu_times": [0.17, 0.04], "name": "dbus-daemon", "memory_percent": 0.031136757261677143, "cpu_percent": 0.0, "pid": 770, "io_counters": [0, 0, 0, 0, 0], "cmdline": "dbus-daemon --system --fork", "memory_info": [2592768, 41635840], "time_since_update": 59.427401065826416, "nice": 0}]}
 ```
 
-Example: _/api/v2/network/interface_name/eth0
+Example: _/api/v2/network/interface_name/eth0_
 
 Return eth0 network interface stats
 
