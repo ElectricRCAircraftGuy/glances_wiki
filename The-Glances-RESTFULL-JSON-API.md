@@ -1,6 +1,6 @@
 **Only for Glances v2.1 or higher !**
 
-Glances HTTP API is based on a **RESTFULL/JSON**.
+Glances HTTP API is based on **RESTFULL/JSON**.
 
 Serveur side
 ============
@@ -24,5 +24,13 @@ Request response:
 
 * 200 - application/json: list
 * 404 - Returned if the property does not exist
+
+Example:
+
+```
+["load", "core", "uptime", "fs", "memswap", "monitor", "percpu", "mem", "sensors", "system", "alert", "psutilversion", "processlist", "diskio", "hddtemp", "processcount", "batpercent", "now", "cpu", "network", "help"]
+```
+
+
 
 
