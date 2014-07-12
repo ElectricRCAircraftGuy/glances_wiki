@@ -20,19 +20,6 @@ Connect to the XMLRPC server:
 
     In [2]: s = xmlrpclib.ServerProxy('http://localhost:61209')
 
-List all the public methodes:
-
-    In [4]: s.system.listMethods()
-
-Out[4]: 
-['getAll',
- 'getAllLimits',
- 'getAllMonitored',
- 'getAllPlugins',
- 'init',
- 'system.listMethods',
- 'system.methodHelp',
- 'system.methodSignature']
 
 List all the availables plugins on the server side:
 
