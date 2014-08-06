@@ -16,6 +16,8 @@ Note: you need to install _python-dev_ on you system before installing PSUtil (e
 
 Note 2: if you have sensors, you should install LM-Sensors before installing P3Sensors (ex: apt-get install lm-sensors)
 
+Note 3: If you want to install MatPlotLib, you should install the deps (ex: sudo apt-get build-dep python-matplotlib)
+
 Install the following libs:
 
     ~/glances-venv/bin/pip install psutil
@@ -25,6 +27,7 @@ and optionnaly:
     ~/glances-venv/bin/pip install bottle
     ~/glances-venv/bin/pip install batinfo
     ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
+    ~/glances-venv/bin/pip install matplotlib
 
 **Only on Windows** operating system:
 
@@ -90,6 +93,8 @@ Test Glances by running your container:
     sudo docker.io run -i -t --entrypoint /bin/bash nicolargo:glances-develop -c "cd glances ; git pull origin develop ; python -m glances"
 
 # How to report a bug ?
+
+First of all, try to run Glances with the -d (Debug) flag on the command line. A /tmp/glances.log file will be generated with a lot of information.
 
 You need a GitHub account (it's free...) to log bug on the Glances' tracker.
 
