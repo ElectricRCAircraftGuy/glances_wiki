@@ -1,4 +1,4 @@
-If you want to install and test the [DEVELOP](https://github.com/nicolargo/glances/tree/develop) version without deleting/uninstall your stable version, you have two options:
+If you want to install and test the [DEVELOP](https://github.com/nicolargo/glances/tree/develop) branch without deleting/uninstall your stable version, you have two options:
 
 1. [https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-python-virtual-environment](Use a Python virtual environment)
 2. [Use a Docker container](https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-docker-container)
@@ -46,35 +46,35 @@ and optionnaly:
 Run the CLI with the default configuration file using:
 
     cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances.conf
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances.conf
 
 To test the monitored processes list configuration file:
 
     cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf
 
 ### Client/Server mode
 
 Run the server:
 
     cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -s
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf -s
 
 And the client:
 
     cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -c @IPSERVER
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf -c @IPSERVER
 
 Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
 
-Note: if the Glances server is not running, Glances client try to fallback to SNMP server (early experimental function).
+Note: if the Glances server is not running, Glances client try to fallback to SNMP server (experimental feature).
 
 ### Webserver mode
 
 Run the server:
 
     cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -C ~/tmp/glances/conf/glances-monitor.conf -w
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf -w
 
 And the client in your favorite Web browser: http://@IPSERVER:61208
 
@@ -90,7 +90,7 @@ Then create the image using:
 
 Test Glances by running your container:
 
-    sudo docker.io run -i -t --entrypoint /bin/bash nicolargo:glances-develop -c "cd glances ; git pull origin develop ; python -m glances"
+    sudo docker.io run -i -t --entrypoint /bin/bash nicolargo:glances-develop -c "cd glances ; git pull origin develop ; python -m glances -d"
 
 # How to report a bug ?
 
@@ -103,5 +103,6 @@ You need a GitHub account (it's free...) to log bug on the Glances' tracker.
 * Glances and PsUtil version (can be retreived with the _~/glances-venv/bin/python -m glances -V_ command)
 * System configuration: Operating system name and version (output of _uname -a_ and _python -V_ on GNU/Linux)
 * Problem description (in English) and optionnaly error message displayed by Glances
+* A copy/paste of relevant messages in the log file (/tmp/glances.log)
 
 Thks !
