@@ -28,6 +28,8 @@ and optionnaly:
     ~/glances-venv/bin/pip install batinfo
     ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
     ~/glances-venv/bin/pip install matplotlib
+    ~/glances-venv/bin/pip install zeroconf
+    ~/glances-venv/bin/pip install netifaces
 
 **Only on Windows** operating system:
 
@@ -68,6 +70,13 @@ And the client:
 Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
 
 Note: if the Glances server is not running, Glances client try to fallback to SNMP server (experimental feature).
+
+### Browser mode
+
+Run one or more Glances server on your LAN (or configure the list in the configuration file, [see this sample](https://github.com/nicolargo/glances/blob/master/conf/glances-test.conf)):
+
+    cd ~/tmp/glances
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf --browser
 
 ### Webserver mode
 
