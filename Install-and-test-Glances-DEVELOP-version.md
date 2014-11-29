@@ -73,7 +73,7 @@ Note: if the Glances server is not running, Glances client try to fallback to SN
 
 ### Browser mode
 
-Run one or more Glances servers on your LAN (or configure the list in the configuration file, [see this sample](https://github.com/nicolargo/glances/blob/master/conf/glances-test.conf)):
+Run one or more Glances servers on your LAN (or configure the list in the configuration file, [see this sample](https://github.com/nicolargo/glances/blob/develop/conf/glances-test.conf)):
 
     cd ~/tmp/glances
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf --browser
