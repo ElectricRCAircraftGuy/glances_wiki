@@ -12,6 +12,9 @@ If you want to install and test the [DEVELOP](https://github.com/nicolargo/glanc
 
 ## Install latest libraries
 
+    apt-get install python-dev lm-sensors 
+    apt-get build-dep python-matplotlib
+
 Note: you need to install _python-dev_ on you system before installing PSUtil (ex: apt-get install python-dev)
 
 Note 2: if you have sensors, you should install LM-Sensors before installing P3Sensors (ex: apt-get install lm-sensors)
@@ -21,15 +24,15 @@ Note 3: If you want to install MatPlotLib, you should install the deps (ex: sudo
 Install the following libs:
 
     ~/glances-venv/bin/pip install psutil
+    ~/glances-venv/bin/pip install zeroconf
+    ~/glances-venv/bin/pip install netifaces
+    ~/glances-venv/bin/pip install bottle
 
 and optionnaly:
 
-    ~/glances-venv/bin/pip install bottle
     ~/glances-venv/bin/pip install batinfo
     ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
     ~/glances-venv/bin/pip install matplotlib
-    ~/glances-venv/bin/pip install zeroconf
-    ~/glances-venv/bin/pip install netifaces
 
 **Only on Windows** operating system:
 
