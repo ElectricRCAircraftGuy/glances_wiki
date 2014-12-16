@@ -12,7 +12,9 @@ Then copy the glances-offline.tgz file to your **offline computer** and:
 1. cd ~
 2. tar zxvf glances-offline.tgz
 3. easy_install -f ~/.basket -H None glances
+
 or
+
 3. pip install --no-index -f file://~/.basket glances
 
 Thanks to Damien Baty for the Basket project.
