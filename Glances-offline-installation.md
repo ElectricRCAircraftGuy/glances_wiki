@@ -22,4 +22,6 @@ or
 
 *  sudo pip install --no-index -f file://~/.basket glances
 
+Edit your /etc/glances.glances.conf file (sample here: https://raw.githubusercontent.com/nicolargo/glances/master/conf/glances.conf)
+
 Thanks to Damien Baty for the Basket project.
