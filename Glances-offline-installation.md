@@ -11,13 +11,15 @@ Then copy the glances-offline.tgz file to your **offline computer** and:
 
 1. cd ~
 2. tar zxvf glances-offline.tgz
+3. sudo mkdir /etc/glances
+4. sudo touch /etc/glances/glances.conf
 
 Install the Glances version with easy_install or pip:
 
-*  easy_install -f ~/.basket -H None glances
+*  sudo easy_install -f ~/.basket -H None glances
 
 or
 
-*  pip install --no-index -f file://~/.basket glances
+*  sudo pip install --no-index -f file://~/.basket glances
 
 Thanks to Damien Baty for the Basket project.
