@@ -11,7 +11,9 @@ If you want to install and test the latest [HEAD](https://github.com/nicolargo/g
     pip install matplotlib
 
 Note 1: psutil need Python dev (apt-get install python-dev)
+
 Note 2: matplotlib needs another deps (apt-get build-dep python-matplotlib)
+
 Note 3: py3sensors needs LMsensor (apt-get install lm-sensors)
 
 ## Download Glances
