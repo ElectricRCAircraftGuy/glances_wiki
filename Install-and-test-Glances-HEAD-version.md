@@ -3,15 +3,16 @@ If you want to install and test the latest [HEAD](https://github.com/nicolargo/g
 ## Install latest libraries
 
     pip install psutil
-    pip install pysensors
+    pip install zeroconf
+    pip install netifaces
+    pip install bottle
+    pip install batinfo
+    pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
+    pip install matplotlib
 
-Additionaly and only on Windows operating system:
-
-    pip install colorconsole
-
-Optionnaly (if you want to test the HTML export function):
-
-    pip install jinja2
+Note 1: psutil need Python dev (apt-get install python-dev)
+Note 2: matplotlib needs another deps (apt-get build-dep python-matplotlib)
+Note 3: py3sensors needs LMsensor (apt-get install lm-sensors)
 
 ## Download Glances
 
