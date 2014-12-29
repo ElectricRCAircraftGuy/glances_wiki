@@ -27,6 +27,7 @@ Install the following libs:
     ~/glances-venv/bin/pip install zeroconf
     ~/glances-venv/bin/pip install netifaces
     ~/glances-venv/bin/pip install bottle
+    ~/glances-venv/bin/pip install influxdb
 
 and optionnaly:
 
