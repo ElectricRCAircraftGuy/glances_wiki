@@ -28,9 +28,12 @@ Commit your branch:
 
 `git commit -a -m "Description"`
 
-`git push origin feature/NEWFEATURE`
+Get latest works from others developer:
 
-Your code will be review by the Glances team. Use the [pull request function](https://help.github.com/articles/using-pull-requests) in GitHub to propose your new feature.
+`git pull origin feature/NEWFEATURE`
+
+
+Send a message (in the relative issue thread), your code will be review by the Glances team. When all is good, use the [pull request function](https://help.github.com/articles/using-pull-requests) in GitHub to propose your new feature.
 
 ## Correct an issue on the master branch ?
 
