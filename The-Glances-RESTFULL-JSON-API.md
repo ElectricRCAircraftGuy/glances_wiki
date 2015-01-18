@@ -151,6 +151,48 @@ Example: _/api/v2/all_
 
 ***
 
+GET _**/api/2/all/limits**_
+
+Return all limits of the server side
+
+Request parameters: 
+
+* None
+
+Request response:
+
+* 200 - application/json: dictionnary of dictionnary
+* 404 - Returned if the property does not exist
+
+Example: _/api/v2/all/limits_
+
+```
+{u'load': {u'load_critical': 5.0, u'load_careful': 0.7, u'load_warning': 1.0}, u'help': {}, u'memswap': {u'memswap_careful': 50.0, u'memswap_critical': 90.0, u'memswap_warning': 70.0}, ...
+```
+
+***
+
+GET _**/api/2/all/views**_
+
+Return all views information (could be usefull to display the stats)
+
+Request parameters: 
+
+* None
+
+Request response:
+
+* 200 - application/json: dictionnary of dictionnary
+* 404 - Returned if the property does not exist
+
+Example: _/api/v2/all/views_
+
+```
+{u'load': {u'cpucore': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'min1': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'min5': {u'decoration': u'OK', u'optional': False, u'additional': False, u'splittable': False}, u'min15': {u'decoration': u'OK_LOG', u'optional': False, u'additional': False, u'splittable': False}}, u'help': {}, u'memswap': {u'used': {u'decoration': u'OK_LOG', u'optional': False, u'additional': False, u'splittable': False}, u'percent': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'free': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'sout': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'total': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'sin': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}}, u'processlist': {}, u'uptime': {}, u'monitor': {}, ...
+```
+
+***
+
 GET _**/api/2/:plugin/limits**_
 
 Return the limits for the specific ``plugin``
