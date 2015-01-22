@@ -1,9 +1,9 @@
 If you want to install and test the [DEVELOP](https://github.com/nicolargo/glances/tree/develop) branch without deleting/uninstall your stable version, you have two options:
 
-1. [https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-python-virtual-environment](Use a Python virtual environment)
-2. [Use a Docker container](https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-docker-container)
+1. [https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-python-virtual-environment](Use a Python virtual environment) (easy way)
+2. [Use a Docker container](https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-docker-container) (fun way)
 
-# Use a Python virtual environment
+# Use a Python virtual environment (the easy and standard way)
 
 ## Create a virtual environment
 
@@ -46,6 +46,8 @@ and optionnaly:
     mkdir ~/tmp
     cd ~/tmp
     git clone -b develop https://github.com/nicolargo/glances.git
+    wget https://github.com/nicolargo/glances/archive/develop.zip
+    unzip develop.zip 
 
 ## Run the Glances DEVELOP version
 
@@ -53,25 +55,25 @@ and optionnaly:
 
 Run the CLI with the default configuration file using:
 
-    cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances.conf
+    cd ~/tmp/glances-develop
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances.conf
 
 To test the monitored processes list configuration file:
 
-    cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf
+    cd ~/tmp/glances-develop
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf
 
 ### Client/Server mode
 
 Run the server:
 
-    cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf -s
+    cd ~/tmp/glances-develop
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf -s
 
 And the client:
 
-    cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf -c @IPSERVER
+    cd ~/tmp/glances-develop
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf -c @IPSERVER
 
 Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
 
@@ -81,15 +83,15 @@ Note: if the Glances server is not running, Glances client try to fallback to SN
 
 Run one or more Glances servers on your LAN (or configure the list in the configuration file, [see this sample](https://github.com/nicolargo/glances/blob/develop/conf/glances-test.conf)):
 
-    cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf --browser
+    cd ~/tmp/glances-develop
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf --browser
 
 ### Webserver mode
 
 Run the server:
 
-    cd ~/tmp/glances
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances/conf/glances-test.conf -w
+    cd ~/tmp/glances-develop
+    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf -w
 
 And the client in your favorite Web browser: http://@IPSERVER:61208
 
