@@ -1,5 +1,15 @@
 # Screenshots arena
 
+## Glances 2.3
+
+Curses interface:
+
+![Glances](http://pix.toile-libre.org/upload/original/1422088442.png)
+
+Web UI interface:
+
+![Glances](http://pix.toile-libre.org/upload/original/1422115509.png)
+
 ## Glances 2.0
 
 ![Glances](https://dl.dropboxusercontent.com/u/1112933/glances-2.0.png)
