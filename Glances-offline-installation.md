@@ -25,8 +25,8 @@ Copy the glances-offline.tgz file to your **offline computer** and...
 3. sudo mv /etc/glances /etc/glances.old
 4. sudo mkdir /etc/glances
 5. sudo touch /etc/glances/glances.conf
-6. sudo easy_install --upgrade -f ~/.basket -H None glances
-**or** sudo pip install --upgrade --no-index -f file://~/.basket glances
+6. sudo easy_install --upgrade -f ~/.basket -H None *
+**or** sudo pip install --upgrade --no-index -f file://~/.basket *
 
 Edit your /etc/glances.glances.conf file (sample here: https://raw.githubusercontent.com/nicolargo/glances/master/conf/glances.conf)
 
