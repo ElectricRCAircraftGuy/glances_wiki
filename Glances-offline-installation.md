@@ -22,6 +22,14 @@ or
 
 *  sudo pip install --no-index -f file://~/.basket glances
 
+Upgrade the Glances version with easy_install or pip:
+
+*  sudo easy_install --upgrade -f ~/.basket -H None glances
+
+or
+
+*  sudo pip install --upgrade --no-index -f file://~/.basket glances
+
 Edit your /etc/glances.glances.conf file (sample here: https://raw.githubusercontent.com/nicolargo/glances/master/conf/glances.conf)
 
 Thanks to Damien Baty for the Basket project.
