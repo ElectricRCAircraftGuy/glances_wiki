@@ -14,7 +14,7 @@ Then copy the glances-offline.tgz file to your **offline computer** and:
 3. sudo mkdir /etc/glances
 4. sudo touch /etc/glances/glances.conf
 
-Install the Glances version with easy_install or pip:
+**Install** the Glances version with easy_install or pip:
 
 *  sudo easy_install -f ~/.basket -H None glances
 
@@ -22,7 +22,7 @@ or
 
 *  sudo pip install --no-index -f file://~/.basket glances
 
-Upgrade the Glances version with easy_install or pip:
+**Upgrade** the Glances version with easy_install or pip:
 
 *  sudo easy_install --upgrade -f ~/.basket -H None glances
 
