@@ -31,7 +31,7 @@ Request response:
 * 200 - application/json: list
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/pluginslist_
+Example: _/api/2/pluginslist_
 
 ```
 ["load", "core", "uptime", "fs", "memswap", "monitor", "percpu", "mem", "sensors", "system", "alert", "psutilversion", "processlist", "diskio", "hddtemp", "processcount", "batpercent", "now", "cpu", "network", "help"]
@@ -52,7 +52,7 @@ Request response:
 * 200 - application/json: dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/mem_
+Example: _/api/2/mem_
 
 ```
 {"available": 5071183872, "used": 3255848960, "cached": 1827352576, "percent": 39.1, "free": 5071183872, "inactive": 1388982272, "active": 3679604736, "total": 8327032832, "buffers": 477982720}
@@ -74,21 +74,21 @@ Request response:
 * 200 - application/json: dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/mem/used_
+Example: _/api/2/mem/used_
 
 Return the memory used (RAM)
 ```
 {"used": 3255848960}
 ```
 
-Example: _/api/v2/processlist/pid_
+Example: _/api/2/processlist/pid_
 
 Return processes' pid list
 ```
 {"pid": [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 72, 73, 74, 75, 76, 77, 78, 90, 92, 93, 113, 114, 165, 167, 168, 169, 170, 171, 172, 191, 192, 370, 376, 429, 430, 454, 468, 522, 562, 770, 773]}
 ```
 
-Example: _/api/v2/network/interface_name_
+Example: _/api/2/network/interface_name_
 
 Return network interfaces name list
 
@@ -113,14 +113,14 @@ Request response:
 * 200 - application/json: dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/processlist/pid/770_
+Example: _/api/2/processlist/pid/770_
 
 Return process stats for pid 770
 ```
 {"770": [{"username": "messagebus", "status": "S", "cpu_times": [0.17, 0.04], "name": "dbus-daemon", "memory_percent": 0.031136757261677143, "cpu_percent": 0.0, "pid": 770, "io_counters": [0, 0, 0, 0, 0], "cmdline": "dbus-daemon --system --fork", "memory_info": [2592768, 41635840], "time_since_update": 59.427401065826416, "nice": 0}]}
 ```
 
-Example: _/api/v2/network/interface_name/eth0_
+Example: _/api/2/network/interface_name/eth0_
 
 Return eth0 network interface stats
 
@@ -143,7 +143,7 @@ Request response:
 * 200 - application/json: dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/all_
+Example: _/api/2/all_
 
 ```
 {"load": {"cpucore": 4, "min1": 0.18, "min5": 0.29, "min15": 0.36}, "core": {"phys": 1, "log": 4}, "uptime": "7:10:12", "fs": [{"mnt_point": "/", "used": 164121161728, "percent": 76.3, "device_name": "/dev/sda5", "fs_type": "ext4", "size": 215225925632}],...}
@@ -164,7 +164,7 @@ Request response:
 * 200 - application/json: dictionnary of dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/all/limits_
+Example: _/api/2/all/limits_
 
 ```
 {u'load': {u'load_critical': 5.0, u'load_careful': 0.7, u'load_warning': 1.0}, u'help': {}, u'memswap': {u'memswap_careful': 50.0, u'memswap_critical': 90.0, u'memswap_warning': 70.0}, ...
@@ -185,7 +185,7 @@ Request response:
 * 200 - application/json: dictionnary of dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/all/views_
+Example: _/api/2/all/views_
 
 ```
 {u'load': {u'cpucore': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'min1': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'min5': {u'decoration': u'OK', u'optional': False, u'additional': False, u'splittable': False}, u'min15': {u'decoration': u'OK_LOG', u'optional': False, u'additional': False, u'splittable': False}}, u'help': {}, u'memswap': {u'used': {u'decoration': u'OK_LOG', u'optional': False, u'additional': False, u'splittable': False}, u'percent': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'free': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'sout': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'total': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}, u'sin': {u'decoration': u'DEFAULT', u'optional': False, u'additional': False, u'splittable': False}}, u'processlist': {}, u'uptime': {}, u'monitor': {}, ...
@@ -206,7 +206,7 @@ Request response:
 * 200 - application/json: dictionnary
 * 404 - Returned if the property does not exist
 
-Example: _/api/v2/mem/limits_
+Example: _/api/2/mem/limits_
 
 ```
 {"mem_careful": 50.0, "mem_critical": 90.0, "mem_warning": 70.0}
