@@ -29,7 +29,9 @@ Install the following libs:
     ~/glances-venv/bin/pip install bottle
     ~/glances-venv/bin/pip install influxdb
     ~/glances-venv/bin/pip install statsd
+    ~/glances-venv/bin/pip install pika
     ~/glances-venv/bin/pip install pystache
+    ~/glances-venv/bin/pip install docker-py
 
 and optionnaly:
 
