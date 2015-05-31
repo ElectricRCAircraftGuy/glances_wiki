@@ -1,8 +1,5 @@
 If you want to install and test the [DEVELOP](https://github.com/nicolargo/glances/tree/develop) branch without deleting/uninstall your stable version, you have two options:
 
-1. [https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-python-virtual-environment](Use a Python virtual environment) (easy way)
-2. [Use a Docker container](https://github.com/nicolargo/glances/wiki/Install-and-test-Glances-DEVELOP-version#use-a-docker-container) (fun way)
-
 # Use a Python virtual environment (the easy and standard way)
 
 ## Create a virtual environment
@@ -98,18 +95,6 @@ Run the server:
 And the client in your favorite Web browser: http://@IPSERVER:61208
 
 Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
-
-# Use a Docker container
-
-You need to have Docker.io installed on your system (https://www.docker.io/gettingstarted/)
-
-Then create the image using:
-
-    sudo docker.io build -t nicolargo:glances-develop https://raw.githubusercontent.com/nicolargo/dockersfiles/master/glances_develop_install
-
-Test Glances by running your container:
-
-    sudo docker.io run -i -t --entrypoint /bin/bash nicolargo:glances-develop -c "cd glances ; git pull origin develop ; python -m glances -d"
 
 # How to report a bug ?
 
