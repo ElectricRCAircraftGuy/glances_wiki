@@ -8,7 +8,7 @@ Glances is developed by a awesome community. If you want to join us, please open
 
 Glances development factory uses the 'git flow' workflow. The development model is greatly inspired by existing models out there. The central repository holds two main branches with an infinite lifetime:
 
-* master: main branch where the source code of HEAD always reflects a production-ready state
+* master: main branch where the source code of HEAD always reflects a production-ready state. Do *NOT* pull on this branch but on the develop one.
 * develop: main branch where the source code of HEAD always reflects a state with the latest delivered development changes for the next release
 
 Please [read this page](https://github.com/nicolargo/glances/wiki/How-to-contribute-to-Glances-%3F).
