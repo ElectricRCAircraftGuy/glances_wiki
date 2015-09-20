@@ -25,10 +25,12 @@ Install the following libs:
     ~/glances-venv/bin/pip install netifaces
     ~/glances-venv/bin/pip install bottle
     ~/glances-venv/bin/pip install influxdb
+    ~/glances-venv/bin/pip install potsdb
     ~/glances-venv/bin/pip install statsd
     ~/glances-venv/bin/pip install pika
     ~/glances-venv/bin/pip install pystache
     ~/glances-venv/bin/pip install docker-py
+    ~/glances-venv/bin/pip install py-cpuinfo
 
 and optionnaly:
 
