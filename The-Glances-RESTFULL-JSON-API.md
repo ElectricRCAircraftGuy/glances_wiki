@@ -213,3 +213,46 @@ Example: _/api/2/mem/limits_
 ```
 
 ***
+
+GET _**/api/2/args**_
+
+Return all Glances command line arguments
+
+Request parameters: 
+
+* None
+
+Request response:
+
+* 200 - application/json: dictionnary
+* 404 - Returned if the property does not exist
+
+Example: _/api/2/args_
+
+```
+{"full_quicklook": false, "snmp_version": "2c", "network_cumul": false, "help_tag": false, "snmp_port": 161, "export_csv": null, "export_statsd": false, "network_sum": false, "enable_process_extended": false, "process_short_name": true, "snmp_community": "public", "disable_sensors": false
+```
+
+***
+
+GET _**/api/2/args/:item**_
+
+Return Glances command line argument for the given item
+
+Request parameters: 
+
+* None
+
+Request response:
+
+* 200 - application/json: dictionnary
+* 400 - Item did not exist
+* 404 - Returned if the property does not exist
+
+Example: Return the refresh time _/api/2/args/time_
+
+```
+5
+```
+
+***
