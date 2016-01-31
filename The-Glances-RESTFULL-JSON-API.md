@@ -215,7 +215,8 @@ Example: _/api/2/mem/limits_
 ***
 
 GET _**/api/2/args**_
-New in 2.6 or +
+
+*New in 2.6 or +*
 
 Return all Glances command line arguments
 
@@ -237,7 +238,8 @@ Example: _/api/2/args_
 ***
 
 GET _**/api/2/args/:item**_
-New in 2.6 or +
+
+*New in 2.6 or +*
 
 Return Glances command line argument for the given item
 
