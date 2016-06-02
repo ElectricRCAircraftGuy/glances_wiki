@@ -151,6 +151,102 @@ Example: _/api/2/all_
 
 ***
 
+GET _**/api/2/:plugin/history**_
+
+Return the history stats for the specific ``plugin``
+
+**Only available in Glances 2.7 or higher**
+
+Request parameters: 
+
+* plugin: plugin name
+
+Request response:
+
+* 200 - application/json: dict of list of tuple (timestamp, value)
+* 404 - Returned if the property does not exist
+
+Example: _/api/2/cpu_
+
+```
+{"user": [["2016-06-02T17:44:48.754493", 23.3], ["2016-06-02T17:45:03.046595", 2.2], ["2016-06-02T17:45:05.582539", 5.0], ["2016-06-02T17:45:23.093514", 3.2]], "system": [["2016-06-02T17:44:48.754515", 4.0], ["2016-06-02T17:45:03.046611", 0.8], ["2016-06-02T17:45:05.582556", 2.2], ["2016-06-02T17:45:23.093532", 0.7]]}
+```
+
+***
+
+GET _**/api/2/:plugin/history/:nb**_
+
+Return the latest nb history stats for the specific ``plugin``
+
+**Only available in Glances 2.7 or higher**
+
+Request parameters: 
+
+* plugin: plugin name
+* nb: number of history value
+
+Request response:
+
+* 200 - application/json: dict of list of tuple (timestamp, value)
+* 404 - Returned if the property does not exist
+
+Example: _/api/2/cpu/2_
+
+```
+{"user": [["2016-06-02T17:45:23.093514", 3.2], ["2016-06-02T17:47:06.390767", 2.1]], "system": [["2016-06-02T17:45:23.093532", 0.7], ["2016-06-02T17:47:06.390786", 0.2]]}
+```
+
+***
+
+GET _**/api/2/:plugin/:item/history**_
+
+Return the item history stats for the specific ``plugin``
+
+**Only available in Glances 2.7 or higher**
+
+Request parameters: 
+
+* plugin: plugin name
+* item: item to retrieve
+
+Request response:
+
+* 200 - application/json: dict of list of tuple (timestamp, value)
+* 404 - Returned if the property does not exist
+
+Example: _/api/2/cpu/user/history
+
+```
+{"user": [["2016-06-02T17:49:28.822984", 2.4], ["2016-06-02T17:49:45.982829", 2.4], ["2016-06-02T17:49:49.566442", 1.5]]}
+```
+
+***
+
+GET _**/api/2/:plugin/:item/history/:nb**_
+
+Return the latest nb item history stats for the specific ``plugin``
+
+**Only available in Glances 2.7 or higher**
+
+Request parameters: 
+
+* plugin: plugin name
+* item: item to retrieve
+* nb: number of history value
+
+Request response:
+
+* 200 - application/json: dict of list of tuple (timestamp, value)
+* 404 - Returned if the property does not exist
+
+Example: _/api/2/cpu/user/history/2
+
+```
+{"user": [["2016-06-02T17:49:49.566442", 1.5], ["2016-06-02T17:51:20.527461", 2.4]]}
+```
+
+***
+
 GET _**/api/2/all/limits**_
 
 Return all limits of the server side
