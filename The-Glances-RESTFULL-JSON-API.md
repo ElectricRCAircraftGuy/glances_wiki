@@ -164,7 +164,7 @@ Request response:
 * 200 - application/json: dict of list of tuple (timestamp, value)
 * 404 - Returned if the property does not exist
 
-Example: _/api/2/cpu_
+Example: _/api/2/cpu/history_
 
 ```
 {"user": [["2016-06-02T17:44:48.754493", 23.3], ["2016-06-02T17:45:03.046595", 2.2], ["2016-06-02T17:45:05.582539", 5.0], ["2016-06-02T17:45:23.093514", 3.2]], "system": [["2016-06-02T17:44:48.754515", 4.0], ["2016-06-02T17:45:03.046611", 0.8], ["2016-06-02T17:45:05.582556", 2.2], ["2016-06-02T17:45:23.093532", 0.7]]}
@@ -188,7 +188,7 @@ Request response:
 * 200 - application/json: dict of list of tuple (timestamp, value)
 * 404 - Returned if the property does not exist
 
-Example: _/api/2/cpu/2_
+Example: _/api/2/cpu/history/2_
 
 ```
 {"user": [["2016-06-02T17:45:23.093514", 3.2], ["2016-06-02T17:47:06.390767", 2.1]], "system": [["2016-06-02T17:45:23.093532", 0.7], ["2016-06-02T17:47:06.390786", 0.2]]}
