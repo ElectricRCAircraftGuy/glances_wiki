@@ -2,15 +2,13 @@
 
 Glances HTTP API is based on **RESTFul/JSON**.
 
-Serveur side
-============
+# Serveur side
 
     $ glances -w
 
     Glances Web server is running on 0.0.0.0:61208
 
-Client side
-===========
+# Client side
 
 The RESTful API is located at:
 
@@ -18,7 +16,7 @@ The RESTful API is located at:
 
 ***
 
-GET _**/api/2/pluginslist**_
+### GET _**/api/2/pluginslist**_
 
 Return the plugins available on the Glances server.
 
@@ -39,7 +37,7 @@ Example: _/api/2/pluginslist_
 
 ***
 
-GET _**/api/2/:plugin**_
+### GET _**/api/2/:plugin**_
 
 Return the stats for the specific ``plugin``
 
@@ -60,7 +58,7 @@ Example: _/api/2/mem_
 
 ***
 
-GET _**/api/2/:plugin/:item**_
+### GET _**/api/2/:plugin/:item**_
 
 Return the ``item`` stat for the specific ``plugin``
 
@@ -98,7 +96,7 @@ Return network interfaces name list
 
 ***
 
-GET _**/api/2/:plugin/:item/:value**_
+### GET _**/api/2/:plugin/:item/:value**_
 
 Return the ``item``==``value`` stat for the specific ``plugin``
 
@@ -130,7 +128,7 @@ Return eth0 network interface stats
 
 ***
 
-GET _**/api/2/all**_
+### GET _**/api/2/all**_
 
 Return all availables stats
 
@@ -151,7 +149,7 @@ Example: _/api/2/all_
 
 ***
 
-GET _**/api/2/:plugin/history**_
+### GET _**/api/2/:plugin/history**_
 
 Return the history stats for the specific ``plugin``
 
@@ -174,7 +172,7 @@ Example: _/api/2/cpu_
 
 ***
 
-GET _**/api/2/:plugin/history/:nb**_
+### GET _**/api/2/:plugin/history/:nb**_
 
 Return the latest nb history stats for the specific ``plugin``
 
@@ -198,7 +196,7 @@ Example: _/api/2/cpu/2_
 
 ***
 
-GET _**/api/2/:plugin/:item/history**_
+### GET _**/api/2/:plugin/:item/history**_
 
 Return the item history stats for the specific ``plugin``
 
@@ -222,7 +220,7 @@ Example: _/api/2/cpu/user/history
 
 ***
 
-GET _**/api/2/:plugin/:item/history/:nb**_
+### GET _**/api/2/:plugin/:item/history/:nb**_
 
 Return the latest nb item history stats for the specific ``plugin``
 
@@ -247,7 +245,7 @@ Example: _/api/2/cpu/user/history/2
 
 ***
 
-GET _**/api/2/all/limits**_
+### GET _**/api/2/all/limits**_
 
 Return all limits of the server side
 
@@ -268,7 +266,7 @@ Example: _/api/2/all/limits_
 
 ***
 
-GET _**/api/2/all/views**_
+### GET _**/api/2/all/views**_
 
 Return all views information (could be usefull to display the stats)
 
@@ -289,7 +287,7 @@ Example: _/api/2/all/views_
 
 ***
 
-GET _**/api/2/:plugin/limits**_
+### GET _**/api/2/:plugin/limits**_
 
 Return the limits for the specific ``plugin``
 
@@ -310,7 +308,7 @@ Example: _/api/2/mem/limits_
 
 ***
 
-GET _**/api/2/args**_
+### GET _**/api/2/args**_
 
 *New in 2.6 or +*
 
@@ -333,7 +331,7 @@ Example: _/api/2/args_
 
 ***
 
-GET _**/api/2/args/:item**_
+### GET _**/api/2/args/:item**_
 
 *New in 2.6 or +*
 
