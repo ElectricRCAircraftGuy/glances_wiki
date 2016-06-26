@@ -5,14 +5,16 @@ Glances API is based on a **XMLRPC server**.
 Serveur side
 ============
 
-    $ glances-develop-server
+    $ glances -s
 
     Glances server is running on 0.0.0.0:61209
+
+By default, Glances server listens to the TCP port 61209. You can change it using the -p <port> option.
 
 Client side
 ===========
 
-Implementation exemple using the Python xmlrpclib with a GNU/Linux server.
+Implementation example using the Python xmlrpclib:
 
 Connect to the XMLRPC server:
 
@@ -25,7 +27,7 @@ List all the availables plugins on the server side:
 
     In [5]: s.getAllPlugins()
 
-Out[5]: '["load", "help", "memswap", "processlist", "uptime", "monitor", "percpu", "system", "diskio", "core", "fs", "mem", "alert", "psutilversion", "hddtemp", "sensors", "now", "network", "allmoni.__repr__", "processcount", "batpercent", "cpu"]'
+    Out[5]: '["load", "help", "memswap", "processlist", "uptime", "monitor", "percpu", "system", "diskio", "core", "fs", "mem", "alert", "psutilversion", "hddtemp", "sensors", "now", "network", "allmoni.__repr__", "processcount", "batpercent", "cpu"]'
 
 Get all the stats in a single dictionnary:
 
