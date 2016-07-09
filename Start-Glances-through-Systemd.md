@@ -37,6 +37,7 @@ Description=Glances
 [Service]
 ExecStart=/usr/local/bin/glances --quiet --export-influxdb
 Restart=on-abort
+TimeoutStartSec=1m
 
 [Install]
 WantedBy=multi-user.target
