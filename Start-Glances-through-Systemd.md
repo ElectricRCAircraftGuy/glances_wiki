@@ -33,11 +33,13 @@ For an active client exporting stats to a InfluxDB server:
 ```
 [Unit]
 Description=Glances
+After=network.target influxd.service
 
 [Service]
 ExecStart=/usr/local/bin/glances --quiet --export-influxdb
-Restart=on-abort
-TimeoutStartSec=1m
+Restart=on-failure
+RestartSec=30s
+TimeoutSec=30s
 
 [Install]
 WantedBy=multi-user.target
