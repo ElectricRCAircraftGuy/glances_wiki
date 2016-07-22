@@ -1,6 +1,8 @@
-Create a file called **glances.service** in the **/etc/systemd/system/** folder.
+# Create unit
 
-For example, if you want to start a Glances server, edit this file as following:
+Create a new unit by creating a file called **glances.service** in the __/etc/systemd/system/__ folder.
+
+## Example: start a Glances server
 
 ```
 [Unit]
@@ -14,7 +16,7 @@ Restart=on-abort
 WantedBy=multi-user.target
 ```
 
-For a Glances Web server:
+## Example: start a Glances webserver
 
 ```
 [Unit]
@@ -28,7 +30,7 @@ Restart=on-abort
 WantedBy=multi-user.target
 ```
 
-For an active client exporting stats to a InfluxDB server:
+## Example: Start a Glances client exporting stats to an InfluxDB server
 
 ```
 [Unit]
@@ -44,3 +46,12 @@ TimeoutSec=30s
 [Install]
 WantedBy=multi-user.target
 ```
+
+# Enable unit for automatic start while booting
+
+    sudo systemctl enable glances.service
+
+# Start the service
+
+    sudo systemctl start glances.service
+
