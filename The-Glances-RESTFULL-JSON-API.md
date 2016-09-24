@@ -115,7 +115,7 @@ Example: _/api/2/processlist/pid/770_
 
 Return process stats for pid 770
 ```
-{"770": [{"username": "messagebus", "status": "S", "cpu_times": [0.17, 0.04], "name": "dbus-daemon", "memory_percent": 0.031136757261677143, "cpu_percent": 0.0, "pid": 770, "io_counters": [0, 0, 0, 0, 0], "cmdline": "dbus-daemon --system --fork", "memory_info": [2592768, 41635840], "time_since_update": 59.427401065826416, "nice": 0}]}
+{"770": [{"username": "messagebus", "status": "S", "cpu_times": [0.17, 0.04], "name": "dbus-daemon", "memory_percent": 0.031136757261677143, "cpu_percent": 0.0, "pid": 770, "ppid": 768, "io_counters": [0, 0, 0, 0, 0], "cmdline": "dbus-daemon --system --fork", "memory_info": [2592768, 41635840], "time_since_update": 59.427401065826416, "nice": 0}]}
 ```
 
 Example: _/api/2/network/interface_name/eth0_
