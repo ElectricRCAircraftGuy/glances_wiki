@@ -31,6 +31,7 @@ Install the following libs:
     ~/glances-venv/bin/pip install pystache
     ~/glances-venv/bin/pip install docker-py
     ~/glances-venv/bin/pip install py-cpuinfo
+    ~/glances-venv/bin/pip install couchdb
 
 and optionnaly:
 
