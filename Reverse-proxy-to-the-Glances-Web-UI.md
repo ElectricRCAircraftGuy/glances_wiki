@@ -26,3 +26,20 @@
       proxy_set_header X-Forwarded-Proto $scheme;
     }
 
+or:
+
+`location /glances/ {`
+        `rewrite /glances/(.*) / break;`
+        `proxy_pass http://localhost:61208;`
+        `proxy_set_header Host $host;`
+        `proxy_set_header X-Real-IP $remote_addr;`
+        `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;`
+        `proxy_set_header X-Forwarded-Proto $scheme; #doesn't do anything?`
+`}`
+
+`location / {`
+        `if ($http_referer ~ "^https?://[^/]+/glances"){`
+                `rewrite ^/(.*) https://$http_host/glances/ redirect;`
+        `}`
+`}`
+
