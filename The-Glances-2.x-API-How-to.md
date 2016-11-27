@@ -2,8 +2,8 @@
 
 Glances API is based on a **XMLRPC server**.
 
-Serveur side
-============
+Server side
+===========
 
     $ glances -s
 
