@@ -39,6 +39,10 @@ and optionnaly:
     ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
     ~/glances-venv/bin/pip install matplotlib
 
+if you have a NVidia GPU add:
+
+    ~/glances-venv/bin/pip install nvidia-ml-py
+
 **Only on Windows** operating system:
 
     ~/glances-venv/bin/pip install colorconsole
@@ -59,11 +63,6 @@ Run the CLI with the default configuration file using:
 
     cd ~/tmp/glances-develop
     LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances.conf
-
-To test the monitored processes list configuration file:
-
-    cd ~/tmp/glances-develop
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf
 
 ### Client/Server mode
 
