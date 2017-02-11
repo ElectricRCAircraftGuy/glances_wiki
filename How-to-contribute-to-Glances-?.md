@@ -14,9 +14,9 @@ Alls news features should be made on the _DEVELOP_ branch.
 
 Create the feature branch:
 
-`git flow feature start NEWFEATURE`
+`git-flow feature start NEWFEATURE`
 
-`git flow feature publish NEWFEATURE` 
+`git-flow feature publish NEWFEATURE` 
 
 Note: replace NEWFEATURE by your feature name
 
