@@ -28,8 +28,10 @@
       proxy_set_header X-Forwarded-Proto $scheme;
     }
 
-or (thanks to @gavinws in https://github.com/nicolargo/glances/issues/876):
+or (thanks to @gavinws in https://github.com/nicolargo/glances/issues/876 and @lgromb in https://github.com/nicolargo/glances/issues/1042):
 
+    port_in_redirect off;
+    
     location /glances/ {
             rewrite /glances/(.*) /$1 break;
             proxy_pass http://localhost:61208;
