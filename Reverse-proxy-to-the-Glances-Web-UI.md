@@ -11,6 +11,8 @@
 
 # Nginx
 
+    port_in_redirect off;
+    
     location / {
       if ($http_referer ~ "^https?://[^/]+/glances"){
         rewrite ^/(.*) /glances/$1 redirect;
