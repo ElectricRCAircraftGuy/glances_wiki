@@ -154,3 +154,9 @@ Get server PsUtil version number:
     In [59]: s.getPsUtilVersion()
 
 Out[59]: '[2, 1, 0]'
+
+Get views (layout) for the CPU plugin:
+
+    In [60]: s.getNetwork()
+
+Out[59]: '{"steal": {"decoration": "OK", "optional": true, "additional": false, "splittable": false}, "nice": {"decoration": "DEFAULT", "optional": true, "additional": false, "splittable": false}, "softirq": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}, "iowait": {"decoration": "OK_LOG", "optional": true, "additional": false, "splittable": false}, "interrupts": {"decoration": "DEFAULT", "optional": true, "additional": false, "splittable": false}, "system": {"decoration": "OK_LOG", "optional": false, "additional": false, "splittable": false}, "time_since_update": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}, "idle": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}, "user": {"decoration": "OK_LOG", "optional": false, "additional": false, "splittable": false}, "guest_nice": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}, "irq": {"decoration": "DEFAULT", "optional": true, "additional": false, "splittable": false}, "cpucore": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}, "syscalls": {"decoration": "DEFAULT", "optional": true, "additional": false, "splittable": false}, "total": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}, "soft_interrupts": {"decoration": "DEFAULT", "optional": true, "additional": false, "splittable": false}, "ctx_switches": {"decoration": "CRITICAL", "optional": true, "additional": false, "splittable": false}, "guest": {"decoration": "DEFAULT", "optional": false, "additional": false, "splittable": false}}'
