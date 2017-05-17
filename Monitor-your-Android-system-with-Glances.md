@@ -4,7 +4,7 @@ Glances can be installed on your **rooted** Android system and used to monitor l
 
 Please follow [this procedure](https://github.com/nicolargo/glances/tree/develop#android).
 
-> You need a **rooted** Android system to install Termux.
+> You need a **rooted** Android system to use Glances.
 
 # Monitor locally your Android device
 
