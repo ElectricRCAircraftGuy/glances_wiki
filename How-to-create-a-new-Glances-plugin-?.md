@@ -21,6 +21,7 @@ foo is an example... to be replace by your plugin name.
 In the glances/plugins folder, create a glances_foo.py file. 
 
 You can use the following skeleton: https://gist.github.com/nicolargo/505e5603217c8c4f8adf779dda558841
+
 This skeleton is only compliant with Glances 2.x.
 
 ## Init your plugin in the main script
@@ -40,7 +41,7 @@ Edit the glances/outputs/glances_curses.py script and add your plugin to one of 
 
 Also add shortcut to the _hotkeys variable in the _GlancesCurses classe.
 
-## Add you plugin in the Web interface
+## Add your plugin in the Web interface
 
 Create a glances/outputs/static/html/plugins/foo.html page with the following line:
 
