@@ -21,6 +21,7 @@ foo is an example... to be replace by your plugin name.
 In the glances/plugins folder, create a glances_foo.py file. 
 
 You can use the following skeleton: https://gist.github.com/nicolargo/505e5603217c8c4f8adf779dda558841
+This skeleton is only compliant with Glances 2.x.
 
 ## Init your plugin in the main script
 
@@ -28,7 +29,7 @@ Edit the glances/main.py script and add the following line in the init_args meth
 
     parser.add_argument('--disable-foo', action='store_true', default=False, dest='disable_foo', help='disable Foo module')
 
-## Add you plugin in the curses interface
+## Add your plugin in the curses interface
 
 Edit the glances/outputs/glances_curses.py script and add your plugin to one of the following functions (where you want the plugin to be displayed):
 
