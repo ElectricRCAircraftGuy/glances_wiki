@@ -12,6 +12,8 @@ First of all, it should be possible to start all the following modes individuall
 - Glances server
 - Glances export
 
+Each mode can be ran in parallel (for example standalone and server).
+
 # A plugins architecture
 
 Introduced in the version 2.0, the plugins architecture will be generalized in the version 3.0. Three kinds of plugins are available:
