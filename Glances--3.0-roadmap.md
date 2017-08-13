@@ -11,7 +11,7 @@ First of all, it should be possible to start all the following modes individuall
 - Glances server
 - Glances export
 
-# Concerning the API
+# Concerning API
 
 On the previous list, you can see that i only wrote "Glances server" and not Glances XML-RPC or Restful server. Glances v3 will only implement a Restful (HTTP/JSON) API (APIv3) and breaks the compatibility with the Glances v2 API.
 
