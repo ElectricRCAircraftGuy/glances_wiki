@@ -1,6 +1,6 @@
 **THIS DOCUMENT IS UNDER CONSTRUCTION**
 
-    **API COULD AND WILL CHANGE**
+**API COULD AND WILL CHANGE**
 
 
 A deep re-factor of the Glances software architecture will be made in the version 3.0.
