@@ -7,12 +7,17 @@ A deep re-factor of the Glances software architecture will be made in the versio
 
 # Modes
 
-First of all, it should be possible to start all the following modes individually or in parallel:
-- Glances standalone or client (CLI and Web based)
-- Glances server
-- Glances export
+3 modes are available:
+- Glances standalone/client (Curse and Web based UI are provided)
+- Glances server (passive mode, waiting for incoming requests from clients)
+- Glances export (active mode, push stats to various endpoints)
 
-Each mode can be ran in parallel (for example standalone and server).
+It should be possible to start all the following modes individually or in parallel, limited to the following combinations:
+
+- client + server
+- client + export
+- server + export
+- client + server + export
 
 # A plugins architecture
 
