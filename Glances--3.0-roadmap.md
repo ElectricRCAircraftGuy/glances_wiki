@@ -5,6 +5,10 @@
 
 A deep re-factor of the Glances software architecture will be made in the version 3.0. The goal of this wiki page is to summarize the concepts and provide an overview of the software for the current and future contributors.
 
+# Glances challenges
+
+Glances is a cross-platform system monitoring software, its main purpose is to present a maximum of information in a minimum of space. By "minimum of space", we means only one screen (no menu, no tabs). It can adapt dynamically the displayed information depending on the user interface size. 
+
 # Modes
 
 3 modes are available:
