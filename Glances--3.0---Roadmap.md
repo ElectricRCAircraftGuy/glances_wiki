@@ -12,7 +12,7 @@ Glances is a cross-platform system monitoring software, its main purpose is to p
 # Modes
 
 3 modes are available:
-- Glances standalone/client (Curse and Web based UI are provided)
+- Glances client/standalone/central
 - Glances server (passive mode, waiting for incoming requests from clients)
 - Glances export (active mode, push stats to various endpoints)
 
@@ -59,27 +59,25 @@ _Note: the 'views' field is optional (the GET request should allow to only ask f
 
 # Input plugins
 
-Plugins already existing in Glances 2: system, core, ip, uptime, now, cpu, mem, memswap, load, quicklook, network, wifi, ports, diskio, fs, irq, folders, raid, sensors, docker, processcount, amps, processlist, alert
+Input plugins already existing in Glances 2: system, core, ip, cpu, mem, memswap, load, quicklook, network, wifi, ports, diskio, fs, irq, folders, raid, sensors, docker, processcount, amps, processlist, alert
 
-Plugins removed from Glances 2: help (why ? to many shortcuts, [a link to the official](http://glances.readthedocs.io/en/stable/cmds.html#interactive-commands) documentation will be provided). 
+New input plugins in Glances 3: time
+
+Inputs plugins removed from Glances 2: 
+* help: removed because to many shortcuts are available, [a link to the official](http://glances.readthedocs.io/en/stable/cmds.html#interactive-commands) documentation will be provided 
+* uptime, now: replaced by the new time plugin
 
 # Output plugins
 
-- curses: UI for terminal and console
-- api: JSON Restful API (used for example by the Web UI)
-- 
+- Curses: UI for terminal and console
+- WebUI: Responsive Web UI
+- API: JSON Restful API
+
+_Note: [http://glances.readthedocs.io/en/stable/quickstart.html#central-client](Central client) will be available for both Curses, WebUI and API._
 
 # Export plugins
 
-- CSV
-- InfluxDB
-- Cassandra
-- CouchDB
-- OpenTSDB
-- Prometheus
-- StatsD
-- ElasticSearch
-- RabbitMQ/ActiveMQ
-- ZeroMQ
-- Kafka
-- Riemann
+Export plugins already existing in Glances 2: CSV, InfluxDB, Cassandra, CouchDB, OpenTSDB, Prometheus, StatsD, ElasticSearch, RabbitMQ/ActiveMQ, ZeroMQ, Kafka, Riemann
+
+New input plugins in Glances 3:
+- stdout: like [http://dag.wiee.rs/home-made/dstat/](dstat), it aims at displaying stats in real time  
