@@ -80,4 +80,4 @@ _Note: [http://glances.readthedocs.io/en/stable/quickstart.html#central-client](
 Export plugins already existing in Glances 2: CSV, InfluxDB, Cassandra, CouchDB, OpenTSDB, Prometheus, StatsD, ElasticSearch, RabbitMQ/ActiveMQ, ZeroMQ, Kafka, Riemann
 
 New input plugins in Glances 3:
-- stdout: like [http://dag.wiee.rs/home-made/dstat/](dstat), it aims at displaying stats in real time  
+- stdout: like [dstat](http://dag.wiee.rs/home-made/dstat/), it aims at displaying stats in real time
