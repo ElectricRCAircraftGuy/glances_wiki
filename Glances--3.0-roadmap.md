@@ -3,7 +3,7 @@
 **API COULD AND WILL CHANGE**
 
 
-A deep re-factor of the Glances software architecture will be made in the version 3.0.
+A deep re-factor of the Glances software architecture will be made in the version 3.0. The goal of this wiki page is to summarize the concepts and provide an overview of the software for the current and future contributors.
 
 # Modes
 
