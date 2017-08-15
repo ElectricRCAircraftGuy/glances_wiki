@@ -21,59 +21,11 @@ It should be possible to start all the following modes individually or in parall
 
 # A plugins architecture
 
-Introduced in the version 2.0, the plugins architecture will be generalized in the version 3.0. Three kinds of plugins are available:
+Introduced in the version 2.0, the plugins architecture will be generalized in the version 3.0. Three kinds of "plugins" are available:
 
-- input: to grab stats from the system
-- output: to display stats to users
-- export: to provide stats to other machine system
-
-## Input plugins
-
-- system: stats are collected using the standard **os** and **platform** Python libs 
-- core: **PsUtil**
-- ip: **UrlLib2**
-- uptime: **PsUtil**
-- now: **datetime**
-- cpu: **PsUtil**
-- mem: **PsUtil**
-- memswap: **PsUtil**
-- load: **os**
-- quicklook: **PsUtil** and **CPUinfo**
-- network: **PsUtil**
-- wifi:
-- ports: **Requests**
-- diskio:
-- fs:
-- irq:
-- folders:
-- raid:
-- sensors:
-- docker:
-- processcount:
-- amps:
-- processlist:
-- alert:
-
-## Output plugins
-
-- curses: UI for terminal and console
-- api: JSON Restful API (used for example by the Web UI)
-- 
-
-## Export plugins
-
-- CSV
-- InfluxDB
-- Cassandra
-- CouchDB
-- OpenTSDB
-- Prometheus
-- StatsD
-- ElasticSearch
-- RabbitMQ/ActiveMQ
-- ZeroMQ
-- Kafka
-- Riemann
+- input: collect stats from the system
+- output: display stats to users
+- export: provide stats to others machine system
 
 # Concerning the API
 
@@ -100,3 +52,51 @@ The APIv3 should generate JSON output message as following (example for a memory
 * views is a list (always, even if the list have zero or one item) of dict
 
 _Note: the 'views' field is optional (the GET request should allow to only ask for stats and metadata)_
+
+# Input plugins
+
+- system: stats are collected using the standard **os** and **platform** Python libs 
+- core: **PsUtil**
+- ip: **UrlLib2**
+- uptime: **PsUtil**
+- now: **datetime**
+- cpu: **PsUtil**
+- mem: **PsUtil**
+- memswap: **PsUtil**
+- load: **os**
+- quicklook: **PsUtil** and **CPUinfo**
+- network: **PsUtil**
+- wifi:
+- ports: **Requests**
+- diskio:
+- fs:
+- irq:
+- folders:
+- raid:
+- sensors:
+- docker:
+- processcount:
+- amps:
+- processlist:
+- alert:
+
+# Output plugins
+
+- curses: UI for terminal and console
+- api: JSON Restful API (used for example by the Web UI)
+- 
+
+# Export plugins
+
+- CSV
+- InfluxDB
+- Cassandra
+- CouchDB
+- OpenTSDB
+- Prometheus
+- StatsD
+- ElasticSearch
+- RabbitMQ/ActiveMQ
+- ZeroMQ
+- Kafka
+- Riemann
