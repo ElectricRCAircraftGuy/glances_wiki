@@ -59,30 +59,9 @@ _Note: the 'views' field is optional (the GET request should allow to only ask f
 
 # Input plugins
 
-- system: stats are collected using the standard **os** and **platform** Python libs 
-- core: **PsUtil**
-- ip: **UrlLib2**
-- uptime: **PsUtil**
-- now: **datetime**
-- cpu: **PsUtil**
-- mem: **PsUtil**
-- memswap: **PsUtil**
-- load: **os**
-- quicklook: **PsUtil** and **CPUinfo**
-- network: **PsUtil**
-- wifi:
-- ports: **Requests**
-- diskio:
-- fs:
-- irq:
-- folders:
-- raid:
-- sensors:
-- docker:
-- processcount:
-- amps:
-- processlist:
-- alert:
+Plugins already existing in Glances 2: system, core, ip, uptime, now, cpu, mem, memswap, load, quicklook, network, wifi, ports, diskio, fs, irq, folders, raid, sensors, docker, processcount, amps, processlist, alert
+
+Plugins removed from Glances 2: help (why ? to many shortcuts, [a link to the official](http://glances.readthedocs.io/en/stable/cmds.html#interactive-commands) documentation will be provided). 
 
 # Output plugins
 
