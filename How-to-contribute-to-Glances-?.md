@@ -1,4 +1,9 @@
-Glances development factory uses the 'git flow' workflow: http://danielkummer.github.io/git-flow-cheatsheet/
+Glances development factory uses the spirit of the the 'git flow' workflow: http://danielkummer.github.io/git-flow-cheatsheet/.
+
+The following branches are available:
+* master: this is the master and stable branch, all the continuous integration is based on this branch. *Nothing* should be pulled request on this branch.
+* develop: this is the main development branch for Glances 3.x. The pull request for news features should be done on this branch.
+* release/glances2: this is the maintenance branch for Glances 2.x. Only hotfix pull request could be done on this branch. 
 
 ## Clone the Glances repository
 
