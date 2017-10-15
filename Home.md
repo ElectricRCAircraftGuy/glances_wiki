@@ -1,10 +1,10 @@
 Welcome to the **Glances**, an open-source software to monitor and collect operating system statistics.
 
-This wiki is the main point of entry for developers working with (or contributing to) the Glances project. If you are a simple user, please have a look [on the official documentation](http://glances.readthedocs.org/en/latest/).
+This Wiki is the main point of entry for developers working with (or contributing to) the Glances project. If you are a simple user, please have a look [on the official documentation](http://glances.readthedocs.org/en/latest/).
 
 # How to contribute ?
 
-Glances is developed by a awesome community. If you want to join us, please open|find an opened issue scheduled in the next release. Add a simple message in the issue to inform the community that you want to contribute. If you need additional information, _do not_ use the Github issue form but directly the [Gitter chat area](https://gitter.im/nicolargo/glances?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). 
+Glances is developed by an awesome community. If you want to join us, please open|find an opened issue scheduled in the next release. Add a simple message in the issue to inform the community that you want to contribute. If you need additional information, _do not_ use the Github issue form but directly the [Gitter chat area](https://gitter.im/nicolargo/glances?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). 
 
 Glances development factory uses the 'git flow' workflow. The development model is greatly inspired by existing models out there. The central repository holds two main branches with an infinite lifetime:
 
