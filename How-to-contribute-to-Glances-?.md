@@ -37,6 +37,15 @@ Note: replace NEWFEATURE by your feature name
 
 It's time to code...
 
+Your code should be PEP compliant. Here are my Atom's packages:
+
+* autocomplete-python
+* linter-pycodestyle
+* linter-pydocstyle
+* linter-python-pep8
+* python-indent
+* python-tools
+
 Commit your branch:
 
 `git commit -a -m "Description"`
