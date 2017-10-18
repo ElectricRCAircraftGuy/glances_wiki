@@ -9,6 +9,7 @@ Create a new unit by creating a file called **glances.service** in the __/etc/sy
 Description=Glances
 
 [Service]
+After=network.target
 ExecStart=/usr/local/bin/glances -s
 Restart=on-abort
 
@@ -23,6 +24,7 @@ WantedBy=multi-user.target
 Description=Glances
 
 [Service]
+After=network.target
 ExecStart=/usr/local/bin/glances -w
 Restart=on-abort
 
@@ -38,6 +40,7 @@ Description=Glances
 After=network.target influxd.service
 
 [Service]
+After=network.target
 ExecStart=/usr/local/bin/glances --quiet --export-influxdb
 Restart=on-failure
 RestartSec=30s
