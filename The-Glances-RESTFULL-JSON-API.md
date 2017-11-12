@@ -16,7 +16,7 @@ The RESTful API is located at:
 
 Request example with Curl:
 
-    $ curl http://localhost:61208/api/2/all
+    $ curl http://localhost:61208/api/2/mem
     {"available": 3627708416, "used": 4244357120, "cached": 2746822656, "percent": 53.9, "free": 3627708416, "inactive": 2100039680, "active": 4159094784, "shared": 384692224, "total": 7872065536, "buffers": 395943936}
 
 Or with Httpie:
