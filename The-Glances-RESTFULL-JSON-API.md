@@ -14,6 +14,43 @@ The RESTful API is located at:
 
 `http://{glances server IP@}:61208/api/2`
 
+Request example with Curl:
+
+    $ curl http://localhost:61208/api/2/all
+    {"available": 3627708416, "used": 4244357120, "cached": 2746822656, "percent": 53.9, "free": 3627708416, "inactive": 2100039680, "active": 4159094784, "shared": 384692224, "total": 7872065536, "buffers": 395943936}
+
+Or with Httpie:
+
+```
+$ http http://localhost:61208/api/2/mem
+HTTP/1.0 200 OK
+Access-Control-Allow-Headers: Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token
+Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS
+Access-Control-Allow-Origin: *
+Content-Encoding: gzip
+Content-Type: application/json
+Date: Sun, 12 Nov 2017 16:06:10 GMT
+Server: WSGIServer/0.1 Python/2.7.12
+
+{
+    "active": 4165025792, 
+    "available": 3621687296, 
+    "buffers": 395997184, 
+    "cached": 2747146240, 
+    "free": 3621687296, 
+    "inactive": 2100359168, 
+    "percent": 54.0, 
+    "shared": 385015808, 
+    "total": 7872065536, 
+    "used": 4250378240
+}
+```
+
+From Glances version 3 and higher, support of Gzip encoding is provided (active by default with Httpie). For Curl, add the followings tags:
+
+    $ curl -H "Accept-encoding: gzip" --compressed -v http://localhost:61208/api/2/all
+    < Content-Encoding: gzip
+
 ***
 
 ### GET _**/api/2/pluginslist**_
