@@ -1,4 +1,4 @@
-**Only for Glances v2.x !**
+**Only for Glances v2.x or higher !**
 
 Glances API is based on a **XMLRPC server**.
 
