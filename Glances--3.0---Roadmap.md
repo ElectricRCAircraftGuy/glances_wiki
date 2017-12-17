@@ -73,7 +73,7 @@ Inputs plugins removed from Glances 2:
 - WebUI: Responsive Web UI
 - API: JSON Restful API
 
-_Note: [http://glances.readthedocs.io/en/stable/quickstart.html#central-client](Central client) will be available for both Curses, WebUI and API._
+_Note: [Central client](http://glances.readthedocs.io/en/stable/quickstart.html#central-client) will be available for both Curses, WebUI and API._
 
 # Export plugins
 
