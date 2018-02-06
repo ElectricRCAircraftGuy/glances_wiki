@@ -8,9 +8,9 @@ On the [Tree House Show (Youtube Video ~ at 1m34s)](http://www.youtube.com/watch
 
 and on the [the Linux Action Show (Youtube Video)](http://youtu.be/68U8HI4tXws?t=6m55s)
 
-![Glances on the Linux Action Show](https://dl.dropbox.com/u/1112933/glances-LinuxActionShow.png)
+[Glances on the Linux Action Show](https://dl.dropbox.com/u/1112933/glances-LinuxActionShow.png)
 
-![A very nice video by tutoriallinux on Youtube](https://www.youtube.com/watch?v=E3Ioopzt8ko&feature=youtu.be)
+[A very nice video by tutoriallinux on Youtube](https://www.youtube.com/watch?v=E3Ioopzt8ko&feature=youtu.be)
 
 # On Websites
 
