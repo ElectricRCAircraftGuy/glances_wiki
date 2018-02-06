@@ -2,13 +2,13 @@ We talk about Glances...
 
 # Glances on (Web)Tv
 
+[A very nice video by tutoriallinux on Youtube](https://www.youtube.com/watch?v=E3Ioopzt8ko&feature=youtu.be)
+
 On the [Tree House Show (Youtube Video ~ at 1m34s)](http://www.youtube.com/watch?v=7aEYoP5-duY&feature=share&list=PLFDA5B0CD72326128?t=1m34s)
 
 ![](https://dl.dropbox.com/u/1112933/TreehouseShowFeature.png)
 
 and on the [the Linux Action Show (Youtube Video)](http://youtu.be/68U8HI4tXws?t=6m55s)
-
-[A very nice video by tutoriallinux on Youtube](https://www.youtube.com/watch?v=E3Ioopzt8ko&feature=youtu.be)
 
 # On Websites
 
