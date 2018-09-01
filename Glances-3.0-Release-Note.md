@@ -225,4 +225,31 @@ And also...
 
 # Bug Fixes
 
--
+- Crash in the Wifi plugin on my Laptop #1151
+- Failed to connect to bus: No such file or directory #1156
+- glances_plugin.py has a problem with specific docker output #1160
+- Key error 'address' in the IP plugin #1176
+- NameError: name 'mode' is not defined in case of interrupt shortly after starting the server mode #1175
+- Crash on startup: KeyError: 'hz_actual_raw' on Raspbian 9.1 #1170
+- Add missing mount-observe and system-observe interfaces #1179
+- OS specific arguments should be documented and reported #1180
+- 'ascii' codec can't encode character u'\U0001f4a9' in position 4: ordinal not in range(128) #1185
+- KeyError: 'memory_info' on stats sum #1188
+- Electron/Atom processes displayed wrong in process list #1192
+- Another encoding issue... With both Python 2 and Python 3 #1197
+- Glances do not exit when eating 'q' #1207
+- FreeBSD blackhole bug #1202
+- Glances crashes when mountpoint with non ASCII characters exists #1201
+- [WEB UI] Minor issue on the Web UI #1240
+- [Glances 3.0 RC1] Client/Server is broken #1244
+- Fixing horizontal scrolling #1248
+- Stats updated during export (thread issue) #1250
+- Glances --browser crashed when more than 40 glances servers on screen 78x45 #1256
+- OSX - Python 3 and empty percent and res #1251
+- Crashes when influxdb option set #1260
+- AMP for kernel process is not working #1261
+- Arch linux package (2.11.1-2) psutil (v5.4.1): RuntimeWarning: ignoring OSError #1203
+- Glances crash with extended process stats #1283
+- Terminal window stuck at the last accessed *protected* server #1275
+- Glances shows mdadm RAID0 as degraded when chunksize=128k and the array isn't degraded. #1299
+- Never starts in a server on Google Cloud and FreeBSD #1292
