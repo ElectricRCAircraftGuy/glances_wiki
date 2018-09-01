@@ -12,7 +12,7 @@ A new stat is available for all displayed processes: thread count.
 
 ![](https://user-images.githubusercontent.com/776747/39767429-09a653e2-52e7-11e8-89c3-dff819bf14c6.png)
 
-### A way to have only REST API available and disable WEB GUI access #1149
+### A new way to have only REST API available and disable WEB GUI access #1149
 
 It is now possible to run the Restful API without the Web User Interface (UI) using the --disable-webui option.
 
@@ -64,6 +64,19 @@ Example of output (load graph)
 ![](https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/graph-load.svg?sanitize=true) 
 
 > Note: SVG files can be openned in every modern Web Browser.
+
+### Docker module shows details about stopped containers #1152
+
+A new configuration key has been added in the Glances configuration file (default value is False). Set it to True to display all the containers
+
+[docker]
+# By default, Glances only display running containers
+# Set the following key to True to display all containers
+all=True
+
+Result in the curses interface:
+
+https://user-images.githubusercontent.com/776747/31486860-1c60ba06-af39-11e7-9246-6bad47946bba.png
 
 ### Others...
 - Make the left side bar width dynamic in the Curse UI #1177
