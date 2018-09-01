@@ -18,8 +18,10 @@ It is now possible to run the Restful API without the Web User Interface (UI) us
 
 Web UI and API (default Web server mode):
 
-`glances -w`
-`Glances Web User Interface started on http://0.0.0.0:61208/`
+```
+glances -w
+Glances Web User Interface started on http://0.0.0.0:61208/
+```
 
 Web API without UI:
 
