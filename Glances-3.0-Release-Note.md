@@ -67,7 +67,9 @@ Example of output (load graph)
 
 ### Docker module shows details about stopped containers #1152
 
-A new configuration key has been added in the Glances configuration file (default value is False). Set it to True to display all the containers
+A new configuration key has been added in the Glances configuration file (default value is False). 
+
+Set it to True to display all the containers:
 
 ```
 [docker]
@@ -80,12 +82,26 @@ Result in the curses interface:
 
 ![](https://user-images.githubusercontent.com/776747/31486860-1c60ba06-af39-11e7-9246-6bad47946bba.png)
 
-### Others...
+### Add dynamic fields in all sections of the configuration file #1204
+
+Add the possibility to use system call in the Glances configuration file sections. 
+
+> Note: the system call is evaluate when the Glances configuration file is read.
+
+Example to add a tag with the hostname in an InfluxDB export section:
+
+```
+[influxdb]
+prefix=`hostname`
+tags=foo:bar,spam:eggs,system:`uname -a`
+```
+
+
+### Others news features...
 - Make the left side bar width dynamic in the Curse UI #1177
 -
 
 # Bug Fixes
--
 -
 
 # Improvements
