@@ -1,4 +1,5 @@
-# Breaking Changes
+# Breaking changes
+
 - Support fo **Python** 3.3 as been removed (yes Glances is still compatible with Python 2.7)
 - Support for **PsUtil** < 5.3 as been removed
 - **XML/RPC API** have changed between Glances 2 and Glances 3. It is **not** possible to use a Glances 2.x client with a Glances 3.x server and conversely
@@ -96,6 +97,31 @@ prefix=`hostname`
 tags=foo:bar,spam:eggs,system:`uname -a`
 ```
 
+### Make plugins and export CLI option dynamical #1173
+
+In Glances < 3.0, if you want to disable one or more plugin you should enter the following command line:
+
+```
+# glances --disable-network --disable-load
+```
+
+With Glances 3.0 and higher it is replaced by:
+
+```
+# glances --disable-plugin network,load
+```
+
+The new syntax will bring some dynamic function for the developer when a new plugin is added. 
+
+Same kind of call should be done for the export module (--export).
+
+A new --modules-list option should be available to display the plugins and exports module:
+
+```
+# glances --modules-list
+Plugins list: load, docker, help, ip, memswap, processlist, cloud, uptime, network, percpu, irq, system, diskio, gpu, folders, core, fs, raid, mem, alert, psutilversion, hddtemp, sensors, now, quicklook, wifi, cpu, processcount, amps, batpercent, ports
+Exporters list: statsd, riemann, couchdb, prometheus, rabbitmq, kafka, json, elasticsearch, influxdb, opentsdb, zeromq, csv, restful, cassandra
+```
 
 ### Others news features...
 - Make the left side bar width dynamic in the Curse UI #1177
