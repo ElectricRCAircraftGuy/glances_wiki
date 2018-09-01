@@ -201,7 +201,7 @@ $ glances --export mqtt
 
 ### Others news features...
 
-A [new Grafana dashboard](https://github.com/nicolargo/glances/blob/develop/conf/glances-grafana.json) is available with stats about running containers, network interface and much more !
+A [new Grafana dashboard](https://grafana.com/dashboards/2387) is available with stats about running containers, network interface and much more !
 
 ![](https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/grafana.png)
 
