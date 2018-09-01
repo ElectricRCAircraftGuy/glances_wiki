@@ -123,17 +123,46 @@ Plugins list: load, docker, help, ip, memswap, processlist, cloud, uptime, netwo
 Exporters list: statsd, riemann, couchdb, prometheus, rabbitmq, kafka, json, elasticsearch, influxdb, opentsdb, zeromq, csv, restful, cassandra
 ```
 
+### Add a light mode for the console UI #1165
+
+A new light mode is available in the curse interface.
+
+```
+# glances --light
+```
+
+![](https://user-images.githubusercontent.com/776747/44944623-55471e00-adda-11e8-9b49-ed2154e94f60.png) 
+
+### Nice Process Priority Configuration #1218
+
+Implement configuration threshold for 'nice' values. Define color levels using a comma separated list of 'nice' values for nice_careful, nice_warning and/or nice_critical. The list may contain negative, positive or zero values.
+
+```
+[processlist]
+# Nice priorities range from -20 to 19.
+# Configure nice levels using a comma separated list.
+#
+# Nice: Example 1, non-zero is warning (default behavior)
+nice_warning=-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19
+#
+# Nice: Example 2, low priority processes escalate from careful to critical
+#nice_careful=1,2,3,4,5,6,7,8,9
+#nice_warning=10,11,12,13,14
+#nice_critical=15,16,17,18,19
+```
+
 ### Others news features...
+
 - Make the left side bar width dynamic in the Curse UI #1177
--
+- Refactor the InfluxDB exporter (API is now stable) #1166
+- Add deflate compression support to the RestAPI (and support in the WebUI) #1182
+- Context switches bottleneck identification #1212
 
 # Bug Fixes
+
 -
 
 # Improvements
--
--
 
-# Other Changes
--
--
+- Add a code of conduct for Glances project's participants #1211
+- Take advantage of the psutil issue #1025 (Add process_iter(attrs, ad_value)) #1105
