@@ -69,14 +69,16 @@ Example of output (load graph)
 
 A new configuration key has been added in the Glances configuration file (default value is False). Set it to True to display all the containers
 
+```
 [docker]
 # By default, Glances only display running containers
 # Set the following key to True to display all containers
 all=True
+```
 
 Result in the curses interface:
 
-https://user-images.githubusercontent.com/776747/31486860-1c60ba06-af39-11e7-9246-6bad47946bba.png
+![](https://user-images.githubusercontent.com/776747/31486860-1c60ba06-af39-11e7-9246-6bad47946bba.png)
 
 ### Others...
 - Make the left side bar width dynamic in the Curse UI #1177
