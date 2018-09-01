@@ -19,14 +19,51 @@ It is now possible to run the Restful API without the Web User Interface (UI) us
 Web UI and API (default Web server mode):
 
 ```
-glances -w
+# glances -w
 Glances Web User Interface started on http://0.0.0.0:61208/
 ```
 
 Web API without UI:
 
-`glances -w --disable-webui`
-`Glances Restful API Server started on http://0.0.0.0:61208/api/2/`
+```
+# glances -w --disable-webui
+Glances Restful API Server started on http://0.0.0.0:61208/api/3/
+```
+
+### Refactor graph export plugin (& replace Matplolib by Pygal) #697
+
+The export module has been completely refactor and the Matplotlib graph generation lib replaced by Pygal. You can generate dynamic graphs (SVG format) in a target folder. The generation starts every time the 'g' hotkey is pressed in the CLI interface or every 'generate_every' seconds (see the configuration key in the glances.conf file).
+
+Example og graph section in the glances.conf file:
+
+```
+[graph]
+# Configuration for the --export graph option
+# Set the path where the graph (.svg files) will be created
+# Can be overwrite by the --graph-path command line option
+path=/tmp
+# It is possible to generate the graphs automatically by setting the
+# generate_every to a non zero value corresponding to the seconds between
+# two generation. Set it to 0 to disable graph auto generation.
+generate_every=60
+# See followings configuration keys definitions in the Pygal lib documentation
+# http://pygal.org/en/stable/documentation/index.html
+width=800
+height=600
+style=DarkStyle
+```
+
+and run Glances with:
+
+```
+$ glances --export graph
+```
+
+Example of output (load graph)
+
+![](https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/graph-load.svg?sanitize=true) 
+
+> Note: SVG files can be openned in every modern Web Browser.
 
 ### Others...
 - Make the left side bar width dynamic in the Curse UI #1177
