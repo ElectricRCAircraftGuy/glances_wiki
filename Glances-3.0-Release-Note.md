@@ -1,3 +1,21 @@
+![](https://raw.githubusercontent.com/nicolargo/glances/v3.0/docs/_static/glances-summary.png)
+
+# How to install/upgrade
+
+The simple way to install Glances on your system:
+
+```
+pip install glances
+```
+
+And to upgrade it (from a previous Glances version installed with pip):
+
+```
+pip install --upgrade glances
+```
+
+Note: See the [installation manual](https://github.com/nicolargo/glances#installation) for others installation methods.
+
 # Breaking changes
 
 - Support for **Python** 3.3 has been removed (yes Glances is still compatible with Python 2.7)
