@@ -173,6 +173,8 @@ nice_warning=-20,-19,-18,-17,-16,-15,-14,-13,-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2
 
 A new output module is available in order to display RAWJson  stats to standard output (stdout).
 
+> Note: It will display one line per stat per refresh.
+
 Examples:
 
 ```
@@ -194,9 +196,7 @@ cpu.user: 2.9
 mem: {'available': 4055138304, 'used': 3816816640, 'cached': 3555241984, 'percent': 48.5, 'free': 4055138304, 'inactive': 1829580800, 'active': 4758806528, 'shared': 396623872, 'total': 7871954944, 'buffers': 618684416}
 ```
 
-> Note: It will display one line per stat per refresh.
-
-### Support for exporting data to a MQTT server #1305
+### Support for exporting data to a MQTT server #1305
 
 You can export statistics to an MQTT server. 
 
