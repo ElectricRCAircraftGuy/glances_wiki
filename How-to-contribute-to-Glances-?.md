@@ -7,7 +7,9 @@ The following branches are available:
 
 ## Clone the Glances repository
 
-First of all, you have to clone the Glances repository to your computer:
+First of all, you have to fork the Glances repository to your computer using the **Fork** button on the upper right side of the Github Web site.
+
+Then clone locally using the following command line: 
 
 `git clone git@github.com:USERNAME/glances.git`
 
@@ -17,13 +19,11 @@ Add the main repository as upstream
 
 `git remote add upstream git@github.com:nicolargo/glances.git`
 
-## Clone the Glances repository
+## Add a new feature ?
 
 Update your repository with the upstream:
 
 `git fetch upstream`
-
-## Add a new feature ?
 
 Alls news features should be made from the _DEVELOP_ branch.
 
@@ -56,6 +56,6 @@ Get latest works from others developer:
 
 Push it:
 
-`git push origin feature/NEWFEATURE`
+`git push -u origin feature/NEWFEATURE`
 
 Send a message (in the relative issue thread), your code will be review by the Glances team. When all is good, use the [pull request function](https://help.github.com/articles/using-pull-requests) in GitHub to propose your new feature.
