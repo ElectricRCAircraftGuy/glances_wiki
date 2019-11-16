@@ -6,6 +6,7 @@ Please contribute to this roadmap. Glances is yours.
 
 # Functional needs
 
+* Improve the central client UI (--browser) (#1289)
 * GPU monitoring for other hardware architecture (#993, #994 and #1048)
 
 # UI points
@@ -15,5 +16,6 @@ Please contribute to this roadmap. Glances is yours.
 # Technical points
 
 * Python 3 support (Python 2 is deprecated). For Python 2 users, the branch 3.x will be maintain.
-* Async IO architecture for the Core (see https://realpython.com/async-io-python/)
+* Async IO architecture for the Core (see https://realpython.com/async-io-python/). Keep in mind to speed up Glances launch (#1534)
+* Support for Windows 10 WLS (#1485)
 
