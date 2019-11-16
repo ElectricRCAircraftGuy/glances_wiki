@@ -1,0 +1,19 @@
+This page will gather all ideas concerning the future Glances 4.x branch.
+
+The Glances philosophy is: "Monitor your computer thanks to a single view. Only for your eyes, no hands needed."
+
+Please contribute to this roadmap. Glances is yours.
+
+# Functional needs
+
+* GPU monitoring for other hardware architecture (#993, #994 and #1048)
+
+# UI points
+
+* Allow processlist columns to be selected in config file #1524
+
+# Technical points
+
+* Python 3 support (Python 2 is deprecated). For Python 2 users, the branch 3.x will be maintain.
+* Async IO architecture for the Core (see https://realpython.com/async-io-python/)
+
