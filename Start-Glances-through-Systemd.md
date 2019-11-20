@@ -40,7 +40,7 @@ Description=Glances
 After=network.target influxd.service
 
 [Service]
-ExecStart=/usr/local/bin/glances --quiet --export-influxdb
+ExecStart=/usr/local/bin/glances --quiet --export influxdb
 Restart=on-failure
 RestartSec=30s
 TimeoutSec=30s
