@@ -13,6 +13,7 @@ Please contribute to this roadmap. Glances is yours.
 # UI points
 
 * Allow processlist columns to be selected in config file #1524
+* Refactor Curses UI ==> https://github.com/nicolargo/pythonarena/blob/master/curses/cursesarena.py
 
 # Technical points
 
