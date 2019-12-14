@@ -8,6 +8,7 @@ Please contribute to this roadmap. Glances is yours.
 
 * Improve the central client UI (--browser) (#1289)
 * GPU monitoring for other hardware architecture (#993, #994 and #1048)
+* Running both server and webserver at the same time #995 
 
 # UI points
 
