@@ -40,3 +40,15 @@ Note: for Glances version previous to 2.11
     ProxyPass /glances/ http://localhost:61208/
     ProxyPassReverse /glances/ http://localhost:61208/
     Redirect permanent /glances http://host/glances/
+
+# Lighttpd
+
+Thanks to @jonesaaronj ([source](https://github.com/nicolargo/glances/issues/1643)).
+
+    $HTTP["url"] =~ "^/glances" {
+        url.rewrite-once = ( "^(/glances)$" => "$1/" )
+        proxy.server = ("" => (( "host" => "localhost", "port" => 61208 )))
+        proxy.header = ( "map-urlpath" => ( "/glances" => "" ) )
+    }
+
+
