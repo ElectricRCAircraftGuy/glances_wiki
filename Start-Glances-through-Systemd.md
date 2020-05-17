@@ -12,6 +12,7 @@ After=network.target
 [Service]
 ExecStart=/usr/local/bin/glances -s
 Restart=on-abort
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
@@ -27,6 +28,7 @@ After=network.target
 [Service]
 ExecStart=/usr/local/bin/glances -w
 Restart=on-abort
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
@@ -42,6 +44,7 @@ After=network.target influxd.service
 [Service]
 ExecStart=/usr/local/bin/glances --quiet --export influxdb
 Restart=on-failure
+RemainAfterExit=yes
 RestartSec=30s
 TimeoutSec=30s
 
