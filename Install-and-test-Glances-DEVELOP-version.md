@@ -1,5 +1,9 @@
 If you want to install and test the [DEVELOP](https://github.com/nicolargo/glances/tree/develop) branch without deleting/uninstall your stable version, you have two options:
 
+# Use the Pypi test repository (for kids)
+
+    pip install -i https://test.pypi.org/simple/ Glances
+
 # Use a Python virtual environment (the easy and standard way)
 
 ## Create a virtual environment
