@@ -11,4 +11,4 @@ Source:
 - https://github.com/uber-archive/pyflame
 - https://github.com/brendangregg/FlameGraph
 
-![](https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/glances-flame.svg)
+![https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/glances-flame.svg](https://raw.githubusercontent.com/nicolargo/glances/develop/docs/_static/glances-flame.svg)
