@@ -3,8 +3,9 @@ FlameGraph for Glances.
 Generated with the following command lines:
 
 ```
-pyflame --threads -p 25527 -o ~/tmp/glances-flame.pl -s 6
-flamegraph.pl ~/tmp/glances-flame.pl > ~/tmp/glances-flame.svg
+pyflame --threads -p 25527 -o ~/tmp/glances-flame.pl -s 60
+grep -v idle ~/tmp/glances-flame.pl > ~/tmp/glances-flame-non-idle.pl
+flamegraph.pl ~/tmp/glances-flame-non-idle.pl > ~/tmp/glances-flame.svg
 ```
 
 Source:
