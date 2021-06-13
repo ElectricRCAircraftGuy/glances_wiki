@@ -6,97 +6,67 @@ If you want to install and test the [DEVELOP](https://github.com/nicolargo/glanc
 
 # Use a Python virtual environment (the easy and standard way)
 
-## Create a virtual environment
+## Install pre-resquisites
 
-    pip install virtualenv
-    virtualenv ~/glances-venv
+    pip install --user virtualenv
 
-## Install latest libraries
+On Debian like system:
 
-    apt-get install python-dev lm-sensors 
-    apt-get build-dep python-matplotlib
+    apt install python-dev 
 
-Note: you need to install _python-dev_ on you system before installing PSUtil (ex: apt-get install python-dev)
+On Redhat like system
 
-Note 2: if you have sensors, you should install LM-Sensors before installing P3Sensors (ex: apt-get install lm-sensors)
+    yum install python-develop 
 
-Note 3: If you want to install MatPlotLib, you should install the deps (ex: sudo apt-get build-dep python-matplotlib)
-
-Install the following libs:
-
-    ~/glances-venv/bin/pip install psutil
-    ~/glances-venv/bin/pip install zeroconf
-    ~/glances-venv/bin/pip install netifaces
-    ~/glances-venv/bin/pip install bottle
-    ~/glances-venv/bin/pip install influxdb
-    ~/glances-venv/bin/pip install potsdb
-    ~/glances-venv/bin/pip install statsd
-    ~/glances-venv/bin/pip install pika
-    ~/glances-venv/bin/pip install pystache
-    ~/glances-venv/bin/pip install docker-py
-    ~/glances-venv/bin/pip install py-cpuinfo
-    ~/glances-venv/bin/pip install couchdb
-
-and optionnaly:
-
-    ~/glances-venv/bin/pip install batinfo
-    ~/glances-venv/bin/pip install https://bitbucket.org/gleb_zhulik/py3sensors/get/tip.tar.gz
-    ~/glances-venv/bin/pip install matplotlib
-
-if you have a NVidia GPU add:
-
-    ~/glances-venv/bin/pip install nvidia-ml-py
-
-**Only on Windows** operating system:
-
-    ~/glances-venv/bin/pip install colorconsole
-
-## Download Glances (develop branch)
+## Download Glances
 
     mkdir ~/tmp
     cd ~/tmp
     git clone -b develop https://github.com/nicolargo/glances.git
-    wget https://github.com/nicolargo/glances/archive/develop.zip
-    unzip develop.zip 
+    cd ~/tmp/glances
+    git checkout develop
+
+## Create the test environment
+
+    cd ~/tmp/glances
+    make venv-python
+    make venv
+
+## Test the environment
+
+    cd ~/tmp/glances
+    make test
 
 ## Run the Glances DEVELOP version
 
 ### Standalone mode
 
-Run the CLI with the default configuration file using:
-
-    cd ~/tmp/glances-develop
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances.conf
+    cd ~/tmp/glances
+    make run
 
 ### Client/Server mode
 
-Run the server:
+Run the server (on a first terminal):
 
-    cd ~/tmp/glances-develop
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf -s
+    cd ~/tmp/glances
+    make run-server
 
-And the client:
+And the client (on a second terminal):
 
-    cd ~/tmp/glances-develop
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf -c @IPSERVER
-
-Where @IPSERVER is the IP address or hostname where the Glances server is running (localhost if server and client are ran on the same machine).
-
-Note: if the Glances server is not running, Glances client try to fallback to SNMP server (experimental feature).
+    cd ~/tmp/glances
+    make run-client
 
 ### Browser mode
 
-Run one or more Glances servers on your LAN (or configure the list in the configuration file, [see this sample](https://github.com/nicolargo/glances/blob/develop/conf/glances-test.conf)):
-
-    cd ~/tmp/glances-develop
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf --browser
+    cd ~/tmp/glances
+    make run-browser
 
 ### Webserver mode
 
 Run the server:
 
-    cd ~/tmp/glances-develop
-    LANGUAGE=en_US.utf8  ~/glances-venv/bin/python -m glances -d -C ~/tmp/glances-develop/conf/glances-test.conf -w
+    cd ~/tmp/glances
+    make run-webserver
 
 And the client in your favorite Web browser: http://@IPSERVER:61208
 
@@ -104,15 +74,16 @@ Where @IPSERVER is the IP address or hostname where the Glances server is runnin
 
 # How to report a bug ?
 
-First of all, try to run Glances with the -d (Debug) flag on the command line. A /tmp/glances.log file will be generated with a lot of information.
+First of all, try to run Glances with the -d (Debug) flag on the command line. A glances.log file will be generated with a lot of information (to find the glances.log path, please run 'make show-version').
 
-You need a GitHub account (it's free...) to log bug on the Glances' tracker.
+Then you need a GitHub account (it's free...) to log bug on the Glances' tracker.
 
-[Click on this link](https://github.com/nicolargo/glances/issues/new) and enter the following informations:
+[Click on this link](https://github.com/nicolargo/glances/issues/new) and enter the following information:
 
-* Glances and PsUtil version (can be retreived with the _~/glances-venv/bin/python -m glances -V_ command)
+* Glances and PsUtil version (output of _make show-version_ command)
 * System configuration: Operating system name and version (output of _uname -a_ and _python -V_ on GNU/Linux)
-* Problem description (in English) and optionnaly error message displayed by Glances
-* A copy/paste of relevant messages in the log file (/tmp/glances.log)
+* Problem description (in English) and optionaly error message displayed by Glances
+* A copy/paste of relevant messages in the log file (glances.log)
+* A copy/paste of _make show-issue_
 
 Thks !
