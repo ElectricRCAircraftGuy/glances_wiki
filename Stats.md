@@ -1,5 +1,7 @@
-Number of download through the official Pypi repository: https://pepy.tech/project/glances
+Top starred Python project: https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Python.md
 
+Number of download through the official Pypi repository: https://pepy.tech/project/glances
+https://github.com/EvanLi/Github-Ranking/blob/master/Top100/Python.md
 Stats to the bitly link (Glances autoinstall): https://bitly.com/1tsvGe5+
 
 Debian Sid stats: http://qa.debian.org/popcon-graph.php?packages=glances
