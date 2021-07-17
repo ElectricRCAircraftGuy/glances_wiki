@@ -1,6 +1,14 @@
 Glances HTTP API is based on **RESTFul/JSON**. 
 
+The detailed Glances Restfull/API documentation is available in the code:
+
+Click here to consult the last version ==> https://github.com/nicolargo/glances/blob/fieldsdescription/docs/api.rst
+
 *Note: Change api/3 by api/2 if you use Glances 2.x.*
+
+
+***
+
 
 # Serveur side
 
@@ -389,5 +397,3 @@ Example: Return the refresh time _/api/2/args/time_
 ```
 5
 ```
-
-***
