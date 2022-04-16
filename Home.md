@@ -23,3 +23,5 @@ Others softwares can grab Glances statistics using the following API:
 
 * [XMLRPC/JSON API version 2](https://github.com/nicolargo/glances/wiki/The-Glances-2.x-API-How-to) (or obsolete [version 1](https://github.com/nicolargo/glances/wiki/The-Glances-1.x-API-How-to)) 
 * [RESTFUL/JSON API](https://github.com/nicolargo/glances/wiki/The-Glances-RESTFULL-JSON-API)
+
+Some examples are available in the following Python notebook: https://colab.research.google.com/drive/11JIK4RLfuZHNhGlUl2bAHmT7jP2IfVmJ?usp=sharing#scrollTo=U6hEBLuvzYbs
