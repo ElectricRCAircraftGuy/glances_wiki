@@ -1,0 +1,1 @@
+![](https://github.com/nicolargo/glances/raw/develop/docs/_static/glances-architecture.png)
