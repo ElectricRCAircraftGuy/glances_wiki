@@ -1,4 +1,4 @@
-First of all, have a look [on existing plugins](http://glances.readthedocs.io/en/stable/aoa/index.html) and ask you a simple question: is it possible to improve an existing plugin instead of create a new one ? 
+First of all, have a look [on existing plugins](https://glances.readthedocs.io/en/latest/aoa) and ask you a simple question: is it possible to improve an existing plugin instead of create a new one ? 
 
 Second question, is it possible to use a AMP configuration ? Glances proposes [an Application Monitoring Process (AMP)](http://glances.readthedocs.io/en/stable/aoa/amps.html) where you can monitor and run action (script).
 
